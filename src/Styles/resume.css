@@ -1,0 +1,27 @@
+.img {
+    max-width: 700px !important;
+}
+
+@media (max-width: 410px) {
+    .img {
+        max-width: 350px !important;
+    }
+}
+
+@media (max-width: 800px) {
+    .img {
+        max-width: 360px !important;
+    }
+}
+
+.resume-download-btn {
+    max-width: 250px;
+    margin-bottom: 20px;
+    font-size: 20px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.download-link {
+    text-decoration: none;
+}
