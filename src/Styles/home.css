@@ -21,17 +21,21 @@
     font-family: "Cormorant Garamond", serif;
     color: #05428a !important;
     font-size: 70px;
+    align-items: center !important;
 }
 
 .heading2 {
     font-family: "Cormorant Garamond", serif;
     color: #05428a !important;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 500;
 }
 
 .to-the-left {
-    padding: 80px 50px;
+    padding: 80px 50px !important;
+}
+
+#intro.to-the-left {
     background-color: #c6c2cd;
 }
 
@@ -119,12 +123,34 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+#aboutMe.container {
+    margin-top: 50px;
+}
+
+#getToKnowMe.heading1 {
+    font-size: 60px;
+    margin-bottom: 0% !important;
+}
+
+#getToKnowMe.heading2 {
+    font-size: 20px;
+    font-weight: 600;
+
+}
 div.card {
     background-color: #ebe9e5;
 }
 
 .contact-row {
     margin-bottom: 50px;
+}
+
+.card-subtitle {
+    padding-top: 15px;
+    padding-left: 10px;
+    margin-bottom: 0% !important;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 24px;
 }
 
 @media (max-width: 480px) {
@@ -149,4 +175,268 @@ div.card {
 .fade-in-section.is-visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+Button.modalButtons {
+    max-width: 100px;
+    font-size: 15px !important;
+    padding: 3px 5px !important;
+}
+
+.modal-content {
+    font-family: "Cormorant Garamond", serif;
+    color: #05428a !important;
+}
+
+#skills.to-the-left {
+    /* background: linear-gradient(#202434, #323954 ); */
+    background-color: #202434;
+    padding-bottom: 20px !important;
+    padding-top: 10px !important;
+}
+
+#skillsheading1.heading1 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 60px !important;
+    text-align: center !important;
+}
+
+img.img-achv-icons {
+    width: 150px; /* Adjust the icon size as needed */
+    height: 150px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.achievement-item {
+    text-align: center;
+    flex-direction: column;
+}
+
+.normal-content {
+    text-align: center;
+    border-radius: 8px;
+    font-family: "Cormorant Garamond", serif;
+    color: #202434 !important;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#skill-card-text.normal-content {
+    color: #202434 !important;
+    text-align: left !important;
+}
+
+#fs.contact-row {
+    margin-bottom: 10px !important;
+}
+
+#cloud.contact-row {
+    margin-bottom: 10px !important;
+}
+
+.skills-text {
+    color: #4d5574 !important;
+}
+
+.featured-text{
+    color: #ebe9e5;
+    font-weight: 500;
+}
+
+.featured-text2{
+    color: #ebe9e5;
+    font-weight: 500;
+}
+
+#skills2.to-the-left {
+    background-color: #ebe9e5;
+    padding-bottom: 20px !important;
+    padding-top: 35px !important;
+}
+
+.allSkills .card-body p {
+    white-space: normal; /* Allow text to wrap */
+    word-wrap: break-word; 
+}
+
+#findMe.card {
+    max-width: 18rem;
+    margin-top: 2rem;
+    background-color: #c1b680;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+#findMe.card:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    z-index: 10; /* Bring it forward */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3); /* Add shadow for depth effect */
+}
+
+.findMe-links{
+    text-decoration: none !important;
+    white-space: normal !important; 
+    word-wrap: break-word !important; 
+}
+
+#three-achv.three-achv {
+    margin-top: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #ebe9e5;
+}
+
+.allSkills .card {
+    flex: 1 0 18rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem; /* Space between cards */
+    background-color: #ebe9e5 !important;
+    border: none !important;
+}
+
+.allSkills .card-header {
+    border-bottom: 0cm !important;
+    background-color: #ebe9e5 !important;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 20px;
+    font-weight: 700 !important;
+    color: #202434;
+    text-decoration: underline #202434;
+}
+
+#allskills.contact-row {
+    color: #ebe9e5 !important;
+    font-family: "Cormorant Garamond", serif;
+    text-align: center !important;
+}
+
+#allskills p {
+    font-size: 23px;
+}
+
+#allskills span {
+    font-size: 30px;
+    color: #c1b680 !important;
+    font-weight: 500;
+}
+
+#experience.to-the-left {
+    padding-top: 10px !important;
+}
+
+.exp-rows {
+    margin-bottom: 30px;
+}
+
+#exp-heading.heading1 {
+    color: #202434;
+    font-size: 70px !important;
+    font-weight: 600;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.exp-cells {
+    background-color: #c1b680;
+    border-radius: 30px;
+    margin: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem 2rem !important;
+    min-height: 200px;
+}
+
+
+.exp-cells h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 2rem !important;
+}
+
+.exp-cells p {
+    font-family:  "Cormorant Garamond", serif;
+    font-size: 20px;
+}
+
+.exp-cells Button {
+    align-self: flex-start; /* Optional if you want it aligned left; remove if centered */
+    max-width: 100px;
+    font-size: 20px !important;
+    background-color: #c6c2cd !important;
+    color: #05428a !important;
+    transition: all 0.3s ease;
+    box-shadow: none;
+    padding: 5px 10px;
+}
+
+.exp-cells Button:hover {
+    background-color: #05428a !important;
+    color: #c6c2cd !important;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px #05428a;
+    z-index: 10;
+}
+
+.exp-modal p {
+    font-family: "Cormorant Garamond", serif !important;
+    font-size: 20px !important;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+}
+
+#projects.to-the-left {
+    background-color: #c6c2cd !important;
+    height: auto;
+}
+
+.project-option {
+    margin-bottom: 5px;
+    transition: transform 0.3s ease;
+}
+
+.project-title {
+    padding: 15px;
+    background-color: #05428a;
+    color: #ffffff;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.project-option:hover .project-title {
+    background-color: #202434;
+    color: #ebe9e5;
+}
+
+.project-title.expanded {
+    background-color: #202434;
+    color: #ebe9e5;
+}
+
+.project-description {
+    padding: 15px;
+    background-color: #ebe9e5;
+    color: #202434;
+    border-radius: 8px;
+    margin-top: 5px;
+    animation: fadeIn 0.3s ease;
+}
+
+/* Animation for project description */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
