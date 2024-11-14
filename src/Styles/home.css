@@ -393,50 +393,65 @@ img.img-achv-icons {
 #projects.to-the-left {
     background-color: #c6c2cd !important;
     height: auto;
+    padding-left: 160px !important;
+    padding-right: 160px !important;
 }
 
+
 .project-option {
-    margin-bottom: 5px;
-    transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
 .project-title {
     padding: 15px;
-    background-color: #05428a;
+    background-color: #05428a; /* Color for unselected option */
     color: #ffffff;
     font-weight: bold;
-    transition: all 0.3s ease;
-    border-radius: 8px;
-    cursor: pointer;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 25px;
+    transition: background-color 0.3s ease;
+    border: #c6c2cd solid;
 }
 
-.project-option:hover .project-title {
-    background-color: #202434;
-    color: #ebe9e5;
+.project-title:hover {
+    background-color: #202434; /* Hover color */
 }
 
 .project-title.expanded {
-    background-color: #202434;
+    background-color: #202434; /* Color when selected */
     color: #ebe9e5;
 }
 
 .project-description {
     padding: 15px;
-    background-color: #ebe9e5;
+    background-color: #ebe9e5; /* Color for expanded description space */
+    font-size: 20px;
+    font-weight: 600;
     color: #202434;
-    border-radius: 8px;
     margin-top: 5px;
-    animation: fadeIn 0.3s ease;
+    transition: max-height 0.3s ease;
+    font-family: "Cormorant Garamond", serif;
 }
 
-/* Animation for project description */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-5px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.project-description h3 {
+    font-weight: 700;
+}
+
+.project-description span{
+    color: #c1b680;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.project-description strong {
+    font-size: 23px !important;
+}
+
+.pc-button {
+    min-width: 350px !important;
+    text-decoration: none !important;
+}
+
+.download-link {
+    text-decoration: none;
 }

@@ -29,6 +29,18 @@ import mongo from '../Assets/mongo.svg';
 import website from '../Assets/website-png.png';
 import exp from '../Assets/exp.png';
 import cert from '../Assets/certifications.png';
+import pc1 from '../Assets/pc1.png';
+import pc2 from '../Assets/pc2.png';
+import pc3 from '../Assets/pc3.png';
+
+import sfo1 from '../Assets/sfo1.jpeg';
+import sfo2 from '../Assets/sfo2.jpeg';
+import sfo3 from '../Assets/sfo3.jpeg';
+import sfo4 from '../Assets/sfo4.jpeg';
+
+import pcInfo from '../Assets/Monisha Mekala Pizza Craze Project.pdf';
+import plus from '../Assets/plus.svg';
+import minus from '../Assets/minus.svg';
 import '../Styles/home.css';
 
 function MyVerticallyCenteredModal(props) {
@@ -132,14 +144,18 @@ function Home() {
     const [code13, setcode13] = useState(false);
     const [dessert, setDes] = useState(false);
 
-    const [hoveredProject, setHoveredProject] = useState(null);
+    const [selectedProject, setSelectedProject] = useState(null);
 
     const projects = [
-        { id: 1, title: "Food Ordering Application" },
-        { id: 2, title: "Early Detection of Alzheimer’s Disease with Blood Plasma using Bi-Recurrent Neural Network" },
-        { id: 3, title: "Student Records" },
-        { id: 4, title: "SFO Passenger Traffic Visualization System" }
+        { id: 1, title: "Food Ordering Application", description: "Description of Food Ordering Application." },
+        { id: 2, title: "SFO Passenger Traffic Visualization System", description: "Description of SFO Passenger Traffic Visualization System." },
+        { id: 3, title: "Early Detection of Alzheimer’s Disease with Blood Plasma using Bi-Recurrent Neural Network", description: "Description of Alzheimer’s Disease Detection Project." }
     ];
+
+    const toggleProject = (id) => {
+        setSelectedProject(selectedProject === id ? null : id);
+    };
+
 
     return (
         <div>
@@ -214,7 +230,7 @@ function Home() {
                             Get to know me!
                         </p>
                         <p className='heading2' id='getToKnowMe'>
-                        My love for computers started way back in 4th grade with a turtle named LOGO. I remember being totally amazed at how a few commands could make that little turtle draw shapes on the screen! From then on, I was hooked—learning how to "speak" to computers felt like learning magic. Later, in high school, I’d watch my sister, a data engineer, work with scripts and data. She’d patiently explain how data was stored and organized, I would understand bits and parts of it but I found myself wanting to know more. That’s what set me on the path to pursue Bachelor's degree in the field of Information Science and Engineering
+                        My love for computers started way back in 4th grade with a turtle named LOGO. I remember being totally amazed at how a few commands could make that little turtle draw shapes on the screen! From then on, I was hooked—learning how to "speak" to computers felt like learning magic. Later, in high school, I’d watch my sister, a data engineer, work with scripts and data. She’d patiently explain how data was stored and organized, I would understand bits and pieces of it but I found myself wanting to know more. That’s what set me on the path to pursue Bachelor's degree in the field of Information Science and Engineering
                         <p></p>
                         As I dug deeper, I fell in love with creating websites and designing databases, and my curiosity kept growing as new technologies came along. One of my proudest moments was working on a project to detect Alzheimer’s early using machine learning. Watching professors take an interest in our progress was thrilling! After a few internships and work experiences as a Web Developer and Software Engineer, I realized there was still so much to learn. Now, I’m pursuing a Master’s in Computer Science, ready for whatever exciting challenges come next. Learning keeps me inspired, and every new project just makes me want to dive deeper into this ever-evolving world of tech.
                         </p>
@@ -385,51 +401,147 @@ function Home() {
                     </p>
                 </Row>
                 <Row>
-                    {/* Left Column for Project Titles */}
-                    <Col sm={4}>
-                        {projects.map((project) => (
-                            <div 
-                                key={project.id} 
-                                className={`project-title ${hoveredProject === project.id ? 'expanded' : ''}`}
-                                onMouseEnter={() => setHoveredProject(project.id)}
-                                onMouseLeave={() => setHoveredProject(null)}
-                            >
-                                {project.title}
-                            </div>
-                        ))}
-                    </Col>
+                    {projects.map((project) => (
+                        <div key={project.id} className="project-option">
+                                <Row 
+                                    className={`project-title ${selectedProject === project.id ? 'expanded' : ''}`} 
+                                    onClick={() => toggleProject(project.id)} >
+                                        <Col sm={8}>{project.title}</Col>
+                                        <Col className='d-flex justify-content-md-end h-100' sm={4}>
+                                            {selectedProject === project.id ?
+                                            (<Image src={minus}/>) : (<Image src={plus}/>)
+                                            }
+                                        </Col>
+                                </Row>
+                            {selectedProject === project.id && (
+                                <Row className="project-description">
+                                {selectedProject === 1 && (
+                                    <div>
+                                        <p>
+                                        <h3>Tech Stack: JavaScript, React.js, Node.js, Nginx, MySQL, AWS EC2, AWS RDS, Git</h3>
+                                        Led a collaborative team of five as the Team Lead for a groundbreaking Food Ordering web application project, focusing on backend development, animations, website responsiveness, and overseeing code deployment on AWS servers. This experience enhanced my technical expertise and emphasized the importance of leadership and responsibility in project management.
+                                    
+                                        <br></br>
+                                    
+                                        <span>Key Achievements and Learnings:</span>
+                                        <br></br>
+                                    
+                                        <strong>Team Leadership:</strong> Guided a diverse team, leveraging individual strengths to meet project goals. Managed critical challenges effectively, developing strong skills in responsibility and working under pressure.
+                                        <br></br>
+                                    
+                                        <strong>Communication and Collaboration:</strong> Maintained team alignment and focus, ensuring cohesive workflow and optimal productivity amid potential distractions.
+                                        <br></br>
+                                    
+                                        <strong>AWS Deployment:</strong> Successfully deployed the application on AWS EC2 servers and managed the database on AWS RDS, demonstrating proficiency in cloud-based technologies.
+                                        <br></br>
+                                    
+                                        <strong>Technological Stack:</strong> Utilized NodeJS, Express, React, Nginx, and MySQL 8.0.33, gaining hands-on experience with these tools for the first time.
+                                        <br></br>
+                                    
+                                        <strong>Tool Proficiency:</strong> Adapted to using Visual Studio Code as the primary Integrated Development Environment (IDE).
+                                        <br></br>
+                                    
+                                        <strong>Technical Contributions:</strong> Directed backend development and Twitter API integration, while ensuring website responsiveness with responsive design, which improved page load speed by 40%. Designed secure database schemas, adhering to best practices.
+                                        <br></br>
+                                    
+                                        <strong>Data-Driven Development:</strong> Applied data-driven techniques and design patterns, reducing git conflicts by 75% through efficient version control. Presented on testing, debugging, and best practices, earning 20 additional points.
+                                        <br></br>
+                                    
+                                        This project not only showcased my technical skills but also demonstrated my leadership and collaboration capabilities, applying cutting-edge technologies in a real-world scenario. I am eager to continue evolving and contributing to impactful projects in the dynamic field of web development.
+                                        </p>
+                                        <Row>
+                                            <Col>
+                                                <Image src={pc2}/>
+                                            </Col>
+                                            <Col>
+                                                <Image src={pc1}/>
+                                            </Col>
+                                            <Col>
+                                                <Image src={pc3}/>
+                                            </Col>
+                                        </Row>
+                                        <Row className='d-flex justify-content-md-center'>
+                                            <Col>
+                                                <a href={pcInfo} download="Monisha_Mekala_Project" className='d-flex justify-content-md-center download-link'>
+                                                    <Button className='pc-button'>More Info On this Project</Button>
+                                                </a>
+                                            </Col>
+                                            <Col>
+                                                <a href="https://github.com/CSC-648-SFSU/csc648-04-fall23-team07-2" className='d-flex justify-content-md-center download-link'>
+                                                    <Button className='pc-button'>Github Repo</Button>
+                                                </a>
+                                            </Col>
+                                        </Row>
+                                    </div>
+                                )}
+                                {selectedProject === 2 && (
+                                    <div>
+                                        <h3>Tech Stack: The backend was powered by PostgreSQL for efficient data storage and retrieval, with Prisma and Node.js reducing database latency by 40% for smooth and scalable data handling. 
+                                        </h3>
 
-                    {/* Right Column for Project Descriptions */}
-                    <Col sm={8} className="project-description">
-                        {hoveredProject === 1 && (
-                            <div>
-                                <p>
-                                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
-                                </p>
-                            </div>
-                        )}
-                        {hoveredProject === 2 && (
-                            <div>
-                                <p>
-                                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
-                                </p>
-                            </div>
-                        )}
-                        {hoveredProject === 3 && (
-                            <div>
-                                <p>
-                                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
-                                </p>
-                            </div>
-                        )}
-                        {hoveredProject === 4 && (
-                            <div>
-                                <p>
-                                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
-                                </p>
-                            </div>
-                        )}
-                    </Col>
+                                        <p>
+                                            Developed and maintained a real-time data visualization platform to analyze passenger traffic at San Francisco International Airport (SFO). By leveraging a dataset of 35.3k rows, this platform improved data processing efficiency by 25%, enabling faster and more accurate insights.
+                                            
+                                            <br></br>
+                                            
+                                            Interactive visualizations built with D3.js on a Next.js web application, providing actionable insights into peak travel periods, airline performance, and passenger behavior. These insights led to a 30% improvement in decision-making speed for airport operations.
+                                            
+                                            <br></br>
+                                                                                        
+                                            Additionally, predictive analytics and comparative metrics were integrated to support strategic planning, reducing resource allocation time by 20% and enhancing overall operational efficiency.
+                                        </p>
+                                        <Row>
+                                            <Col>
+                                                <Image src={sfo1}/>
+                                            </Col>
+                                            <Col>
+                                                <Image src={sfo2}/>
+                                            </Col>
+                                            <Col>
+                                                <Image src={sfo3}/>
+                                            </Col>
+                                            <Col>
+                                                <Image src={sfo4}/>
+                                            </Col>
+                                        </Row>
+                                        <Row className='d-flex justify-content-md-center'>
+                                            <Col>
+                                                <a href="https://github.com/supriyakr/airtraffic-sfo" className='d-flex justify-content-md-center download-link'>
+                                                    <Button className='pc-button'>Github Repo</Button>
+                                                </a>
+                                            </Col>
+                                        </Row>
+                                    </div>
+                                )}
+                                {selectedProject === 3 && (
+                                    <div>
+                                        <h3>Tech Stack: Python, Jupyter Notebook, Numpy, TensorFlow, Scikit</h3>
+                                        <p>
+                                            Led a team at Dayananda Sagar Academy of Technology and Management, Bangalore, in developing a machine learning solution for early Alzheimer's disease detection. The project involved creating a Bidirectional Recurrent Neural Network (Bi-RNN) algorithm to analyze blood plasma and assess the disease's stage, aiming to provide a quick and cost-effective early diagnosis method.
+
+                                            <br></br>
+
+                                            <span>Key Achievements:</span>
+                                            <br></br>
+
+                                            <strong>Algorithm Development:</strong> Developed the Bi-RNN algorithm, tackling challenges in dataset reading and integration. Utilized Long Short Term Memory (LSTM) techniques, achieving 92% accuracy and an AUC of 91-95%.
+                                            <br></br>
+
+                                            <strong>Research Contributions:</strong> Presented the research at the National Conference on Convergence of Science, Technology & Management, Bangalore, and published findings in reputable journals, including <em>'Early detection of Alzheimer’s: Modalities and Methods'</em> in IRO Journals and <em>'Early detection of Alzheimer’s using blood plasma proteins with Recurrent Neural Networks'</em> in IFREP.
+                                            <br></br>
+
+                                            <strong>Technical Contributions:</strong> Focused on algorithm development, data preprocessing, and feature engineering. Achieved 92% accuracy on a 13,500-record dataset from ADNI, resolving data imbalance and overfitting issues, which improved prediction accuracy by 20%. Managed project timelines, maintained quality documentation, conducted code reviews, and ensured timely delivery.
+                                            <br></br>
+
+                                            This project refined my technical skills and allowed me to contribute significantly to healthcare technology. I am eager to continue applying my expertise in impactful projects at the intersection of technology and healthcare.
+                                        </p>
+                                    </div>
+                                )}
+                                
+                                </Row>
+                            )}
+                        </div>
+                    ))}
                 </Row>
             </Container>
             <Container fluid id='certifications' className='to-the-left'>
