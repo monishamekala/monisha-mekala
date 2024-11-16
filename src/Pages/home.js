@@ -145,10 +145,6 @@ function MyVerticallyCenteredModal(props) {
   }
 
 function Home() {
-    const [show, setShow] = useState(false);
-
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
 
     const [GRA, setGRA] = useState(false);
     const [SSE, setSSE] = useState(false);
