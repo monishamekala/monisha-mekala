@@ -6,7 +6,6 @@ import Image from 'react-bootstrap/Image';
 import ProfilePicture from '../Assets/ProfilePicture.jpeg';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-// import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
 
 
@@ -180,7 +179,7 @@ function Home() {
                                 </Button>
                             </Col>
                             <Col sm>
-                                <Button size="lg" className='work-with-me' onClick={() => document.getElementById('myResume').scrollIntoView({ behavior: 'smooth' })}>
+                                <Button size="lg" className='work-with-me' href='https://www.linkedin.com/in/monisha-mekala/' target="_blank" rel="noopener noreferrer">
                                     Work With Me
                                 </Button>
                             </Col>
@@ -196,7 +195,7 @@ function Home() {
                     <Col sm={4} className='align-self-center'>
                         <Card id='findMe'>
                             <Card.Body>
-                                <a href='https://www.linkedin.com/in/monisha-mekala/' className='findMe-links'>
+                                <a href='https://www.linkedin.com/in/monisha-mekala/' className='findMe-links' target="_blank" rel="noopener noreferrer">
                                     <div className="d-flex align-items-center">
                                         <Card.Link>
                                             <Image src={linkedIn} />
@@ -208,7 +207,7 @@ function Home() {
                         </Card>
                         <Card id='findMe'>
                         <Card.Body>
-                            <a className='findMe-links' href='mailto:mvn.monisha@gmail.com'>
+                            <a className='findMe-links' href='mailto:mvn.monisha@gmail.com' target="_blank" rel="noopener noreferrer">
                                 <div className="d-flex align-items-center">
                                     <Card.Link>
                                         <Image src={email} />
@@ -220,7 +219,7 @@ function Home() {
                         </Card>
                         <Card id='findMe'>
                         <Card.Body>
-                            <a href="https://github.com/monishamekala" className='findMe-links'>
+                            <a href="https://github.com/monishamekala" className='findMe-links' target="_blank" rel="noopener noreferrer">
                                 <div className="d-flex align-items-center">
                                     <Card.Link>
                                         <Image src={github} /> 
@@ -325,11 +324,11 @@ function Home() {
                         <Col sm>
                             <p>
                                 <span className='yellow-highlight-spans'>Languages & Frameworks: </span>
-                                C++, C#, <span className='highlight-text'>Python</span>, <span className='highlight-text'>Java</span>, <span className='highlight-text'>Go</span>, Flask, Express, Bootstrap, <span className='highlight-text'>Spring Boot</span>, NumPy
+                                C++, C#, <span className='highlight-text'>Python</span>, <span className='highlight-text'>Java</span>, <span className='highlight-text'>Go</span>, Flask, Express, Bootstrap, <span className='highlight-text'>Spring Boot</span>
                             </p>
                             <p>
                                 <span className='yellow-highlight-spans'>Web Technologies: </span>
-                                HTML5, CSS3, PHP, <span className='highlight-text'>JavaScript</span>, <span className='highlight-text'>Node.js</span>, <span className='highlight-text'>React.js</span>, REST, AngularJS, Ajax, API, Express.js
+                                HTML5, CSS3, PHP, <span className='highlight-text'>JavaScript</span>, <span className='highlight-text'>Node.js</span>, <span className='highlight-text'>React.js</span>, REST, AngularJS, Ajax, Express.js
                             </p>
                             <p>
                                 <span className='yellow-highlight-spans'>DevOps Tools: </span>
@@ -341,7 +340,7 @@ function Home() {
                             </p>
                             <p>
                                 <span className='yellow-highlight-spans'>Cloud Platforms and Tools: </span>
-                                <span className='highlight-text'>AWS EC2</span>, Azure, GCP, JIRA, Visual Studio, Eclipse, Spyder, MATLAB, Ubuntu
+                                <span className='highlight-text'>AWS EC2</span>, Microsoft Azure, Google Cloud Platform, JIRA, Visual Studio, Eclipse, Linux, Ubuntu
                             </p>
                         </Col>
                         </Row>
@@ -628,11 +627,8 @@ function Home() {
                         Resume 
                     </p>
                 </Row>
-                <Row className='text-center mx-auto'>
+                <Row className='text-center mx-auto align-self-center'>
                     <Col sm>
-                        <Image src={resume} className='img mx-auto'/>
-                    </Col>
-                    <Col className='mx-auto align-self-center' sm>
                         <Row>
                             <a href={resumePdf} download="Monisha_Mekala_Resume.pdf" className="download-link">
                                 <Button className="resume-download-btn mx-auto">
@@ -640,65 +636,7 @@ function Home() {
                                 </Button>
                             </a>
                         </Row>
-                        <Row>
-                            {/* <Form 
-                            id="contact-me-form" 
-                            name="contact" 
-                            method="POST" 
-                            data-netlify="true" 
-                            data-netlify-honeypot="bot-field"
-                            >
-                            <input type="hidden" name="form-name" value="contact" />
-
-                            <Form.Group as={Row} className="mb-3" controlId="formPlaintextName">
-                                <Form.Label column sm="2">Name:</Form.Label>
-                                <Col sm="10">
-                                <Form.Control type="text" name="name" placeholder="Enter your name" required />
-                                </Col>
-                            </Form.Group>
-
-                            <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
-                                <Form.Label column sm="2">Email:</Form.Label>
-                                <Col sm="10">
-                                <Form.Control type="email" name="email" placeholder="Enter your email" required />
-                                </Col>
-                            </Form.Group>
-
-                            <Form.Group as={Row} className="mb-3" controlId="formPlaintextMessage">
-                                <Form.Label column sm="2">Message:</Form.Label>
-                                <Col sm="10">
-                                <Form.Control as="textarea" name="message" rows={3} placeholder="Enter your message" required />
-                                </Col>
-                            </Form.Group>
-
-                            <Button type="submit">Send</Button>
-                            </Form> */}
-                            <form id='contact-me-form' name="contact" method='POST' data-netlify='true' netlify-honeypot="bot-field">
-                                <input type="hidden" name="form-name" value="contact" />
-                                <p className='heading1'>
-                                    Talk to Me!
-                                </p>
-                                <div class="form-group row">
-                                    <label class="col-sm-2 col-form-label">Name</label>
-                                    <div class="col-sm-10">
-                                        <input type="text" class="form-control-plaintext" name='name'/>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-sm-2 col-form-label">Email</label>
-                                    <div class="col-sm-10">
-                                        <input type="text" class="form-control-plaintext" name='email'/>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-sm-2 col-form-label">Message</label>
-                                    <div class="col-sm-10">
-                                        <textarea class="form-control" rows="3" name='message'></textarea>
-                                    </div>
-                                </div>
-                                <button type="submit" class="btn btn-primary mb-2">Send</button>
-                            </form>
-                        </Row>
+                        <Image src={resume} className='img mx-auto'/>
                     </Col>
                 </Row>
             </Container>
@@ -717,7 +655,7 @@ function Home() {
                             </a>
                             <br></br>
                             <a href="https://www.linkedin.com/in/monisha-mekala/" target="_blank" rel="noopener noreferrer">
-                                linked: monisha-mekala
+                                linkedIn: monisha-mekala
                             </a>
                             <br></br>
                             <a href="https://github.com/monishamekala" target="_blank" rel="noopener noreferrer">
