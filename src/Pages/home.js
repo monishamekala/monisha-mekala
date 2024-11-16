@@ -630,10 +630,10 @@ function Home() {
                     </p>
                 </Row>
                 <Row className='text-center mx-auto'>
-                    <Col>
+                    <Col sm>
                         <Image src={resume} className='img mx-auto'/>
                     </Col>
-                    <Col className='mx-auto align-self-center'>
+                    <Col className='mx-auto align-self-center' sm>
                         <Row>
                             <a href={resumePdf} download="Monisha_Mekala_Resume.pdf" className="download-link">
                                 <Button className="resume-download-btn mx-auto">
@@ -643,33 +643,41 @@ function Home() {
                         </Row>
                         <Row>
                             <Form 
-                                id="contact-me-form" 
-                                name="contact" 
-                                method="POST" 
-                                data-netlify="true" 
-                                data-netlify-honeypot="bot-field"
+                            id="contact-me-form" 
+                            name="contact" 
+                            method="POST" 
+                            data-netlify="true" 
+                            data-netlify-honeypot="bot-field"
                             >
-                                <input type="hidden" name="form-name" value="contact" />
-                                <p className="heading1">Talk To Me!</p>
-                                <Form.Group as={Row} className="mb-3" controlId="formPlaintextName">
-                                <Form.Label column sm="2">Name</Form.Label>
+                            {/* Hidden field to enable Netlify form submissions */}
+                            <input type="hidden" name="form-name" value="contact" />
+
+                            {/* Name Field */}
+                            <Form.Group as={Row} className="mb-3" controlId="formPlaintextName">
+                                <Form.Label column sm="2">Name:</Form.Label>
                                 <Col sm="10">
-                                    <Form.Control type="text" name="name" required />
+                                <Form.Control type="text" name="name" placeholder="Enter your name" required />
                                 </Col>
-                                </Form.Group>
-                                <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
-                                <Form.Label column sm="2">Email</Form.Label>
+                            </Form.Group>
+
+                            {/* Email Field */}
+                            <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
+                                <Form.Label column sm="2">Email:</Form.Label>
                                 <Col sm="10">
-                                    <Form.Control type="email" name="email" required />
+                                <Form.Control type="email" name="email" placeholder="Enter your email" required />
                                 </Col>
-                                </Form.Group>
-                                <Form.Group as={Row} className="mb-3" controlId="formPlaintextMessage">
-                                <Form.Label column sm="2">Message</Form.Label>
+                            </Form.Group>
+
+                            {/* Message Field */}
+                            <Form.Group as={Row} className="mb-3" controlId="formPlaintextMessage">
+                                <Form.Label column sm="2">Message:</Form.Label>
                                 <Col sm="10">
-                                    <Form.Control as="textarea" rows={3} name="message" />
+                                <Form.Control as="textarea" name="message" rows={3} placeholder="Enter your message" required />
                                 </Col>
-                                </Form.Group>
-                                <Button type="submit">Send</Button>
+                            </Form.Group>
+
+                            {/* Submit Button */}
+                            <Button type="submit">Send</Button>
                             </Form>
                         </Row>
                     </Col>
