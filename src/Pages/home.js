@@ -6,7 +6,7 @@ import Image from 'react-bootstrap/Image';
 import ProfilePicture from '../Assets/ProfilePicture.jpeg';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import Form from 'react-bootstrap/Form';
+// import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
 
 
@@ -163,7 +163,6 @@ function Home() {
     const toggleProject = (id) => {
         setSelectedProject(selectedProject === id ? null : id);
     };
-
 
     return (
         <div>
@@ -642,17 +641,15 @@ function Home() {
                             </a>
                         </Row>
                         <Row>
-                            <Form 
+                            {/* <Form 
                             id="contact-me-form" 
                             name="contact" 
                             method="POST" 
                             data-netlify="true" 
                             data-netlify-honeypot="bot-field"
                             >
-                            {/* Hidden field to enable Netlify form submissions */}
                             <input type="hidden" name="form-name" value="contact" />
 
-                            {/* Name Field */}
                             <Form.Group as={Row} className="mb-3" controlId="formPlaintextName">
                                 <Form.Label column sm="2">Name:</Form.Label>
                                 <Col sm="10">
@@ -660,7 +657,6 @@ function Home() {
                                 </Col>
                             </Form.Group>
 
-                            {/* Email Field */}
                             <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
                                 <Form.Label column sm="2">Email:</Form.Label>
                                 <Col sm="10">
@@ -668,7 +664,6 @@ function Home() {
                                 </Col>
                             </Form.Group>
 
-                            {/* Message Field */}
                             <Form.Group as={Row} className="mb-3" controlId="formPlaintextMessage">
                                 <Form.Label column sm="2">Message:</Form.Label>
                                 <Col sm="10">
@@ -676,9 +671,33 @@ function Home() {
                                 </Col>
                             </Form.Group>
 
-                            {/* Submit Button */}
                             <Button type="submit">Send</Button>
-                            </Form>
+                            </Form> */}
+                            <form id='contact-me-form' name="contact" method='POST' data-netlify='true' netlify-honeypot="bot-field">
+                                <input type="hidden" name="form-name" value="contact" />
+                                <p className='heading1'>
+                                    Talk to Me!
+                                </p>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Name</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control-plaintext" name='name'/>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Email</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control-plaintext" name='email'/>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Message</label>
+                                    <div class="col-sm-10">
+                                        <textarea class="form-control" rows="3" name='message'></textarea>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary mb-2">Send</button>
+                            </form>
                         </Row>
                     </Col>
                 </Row>

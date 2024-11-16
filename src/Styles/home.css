@@ -559,6 +559,21 @@ img.img-achv-icons {
     font-size: 40px !important;
     font-weight: 500;
 }
+
+#contact-me-form input {
+    border: #bcbbb8 solid;
+    border-radius: 5px;
+}
+
+#contact-me-form textarea {
+    border: #bcbbb8 solid;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 2% !important;
+}
+
 #footer.to-the-left {
     background-color: #c6c2cd;
     padding: 80px 6% 80px 6% !important;
