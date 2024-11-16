@@ -25,6 +25,7 @@ import kubernetes from '../Assets/kubernetes.svg';
 import docker from '../Assets/docker.svg';
 import aws from '../Assets/aws.svg';
 import mysql from '../Assets/mysql.svg';
+import postgres from '../Assets/postgres.svg';
 import mongo from '../Assets/mongo.svg';
 import website from '../Assets/website-png.png';
 import exp from '../Assets/exp.png';
@@ -33,10 +34,19 @@ import pc1 from '../Assets/pc1.png';
 import pc2 from '../Assets/pc2.png';
 import pc3 from '../Assets/pc3.png';
 
+import sfState from '../Assets/sfState.jpeg';
+import dsi from '../Assets/dsi.jpeg';
+
 import sfo1 from '../Assets/sfo1.jpeg';
 import sfo2 from '../Assets/sfo2.jpeg';
 import sfo3 from '../Assets/sfo3.jpeg';
 import sfo4 from '../Assets/sfo4.jpeg';
+
+import awscertification from '../Assets/awsBadge.png';
+import ckad from '../Assets/ckad.png';
+
+import resume from '../Assets/monisha_mekala_resume.jpg';
+import resumePdf from '../Assets/Monisha_Mekala_Resume.pdf';
 
 import pcInfo from '../Assets/Monisha Mekala Pizza Craze Project.pdf';
 import plus from '../Assets/plus.svg';
@@ -60,41 +70,43 @@ function MyVerticallyCenteredModal(props) {
         <h4>{props.role}</h4>
         {props.role === "Graduate Research Assistant" && (
             <div>
-                <p>The VREE project is a collaborative initiative between the Department of Computer Science and the School of Engineering, aimed at creating a 3D virtual reality environment to train structural engineering students in post-earthquake damage analysis. This immersive VR training model educates students on identifying structural damage types within a realistic 3D environment.</p>
-                <p>My role focuses on advancing the existing desktop-based model to a fully immersive VR experience suitable for head-mounted display devices. Using Unity, .NET, and C#, I’m developing enhanced functionalities to create an engaging training platform that allows users to inspect structural integrity post-earthquake, enabling hands-on learning and improved educational outcomes.</p>
+                <p>The VREE project is a collaborative initiative between the Department of Computer Science and the School of Engineering, aimed at <span className='highlight-text'>creating a 3D virtual reality environment</span> to train structural engineering students in post-earthquake damage analysis. This immersive VR training model educates students on identifying structural damage types within a realistic 3D environment.</p>
+                <p>My role focuses on advancing the existing desktop-based model to a fully immersive VR experience suitable for head-mounted display devices. <span className='highlight-text'>Using Unity, .NET, and C#</span>, I’m developing enhanced functionalities to create an engaging training platform that allows users to inspect structural integrity post-earthquake, enabling hands-on learning and improved educational outcomes.</p>
             </div>
         )}
         {props.org === "Associated Students of San Francisco State University" && (
             <div>
-                <p>As a part-time Web Developer Intern, I supported the university’s infrastructure by managing AWS services and streamlining deployment processes. This role allowed me to apply and enhance my cloud computing and DevOps skills while working within an Agile team environment.</p>
-                <p>Key Responsibilities:
+                <p>As a part-time Web Developer Intern, I supported the university’s infrastructure by <span className='highlight-text'>managing AWS services and streamlining deployment processes.</span> This role allowed me to apply and <span className='highlight-text'>enhance my cloud computing and DevOps skills</span> while working within an Agile team environment.</p>
+                <p><strong>Key Responsibilities:</strong>
                 <br></br>
                 Collaborated with cross-functional teams to maintain communication and ensure smooth development and operations workflows.
                 <br></br>
-                Managed AWS services like EC2, AMI, and Auto-scaling, supporting cloud infrastructure scalability and performance.
+                Managed AWS services like <span className='highlight-text'>EC2, AMI, and Auto-scaling, </span>supporting cloud infrastructure scalability and performance.
                 <br></br>
-                Assisted in setting up CI/CD pipelines using Jenkins, automating code testing, integration, and deployment processes.
+                Assisted in setting up <span className='highlight-text'>CI/CD pipelines</span> using Jenkins, automating code testing, integration, and deployment processes.
                 <br></br>
-                Configured AWS RDS for database management, optimizing data storage performance and reliability.
+                Configured <span className='highlight-text'>AWS RDS for database management</span>, optimizing data storage performance and reliability.
                 <br></br>
                 This internship provided hands-on experience in cloud infrastructure management, helping me build a strong foundation in DevOps practices and cloud technologies.</p>
             </div>
         )}
         {props.role === "Senior Software Engineer" && (
             <div>
-                <p>As a seasoned Senior Quality Assurance Engineer at Larsen & Toubro Infotech, I contributed to the transformative 'Marsh McLennan' project. This initiative focuses on aiding organizations in meeting health, wealth, and career-related requirements through innovative and technology-driven solutions. My role involves not only conducting thorough automation and APIs testing but also gaining proficiency in Java Selenium, C# BDD Specflow, and RestSharp.</p>
+                <p>As a seasoned Senior Quality Assurance Engineer at Larsen & Toubro Infotech, I contributed to the transformative <span className='highlight-text'>'Marsh McLennan'</span> project. This initiative focuses on aiding organizations in meeting health, wealth, and career-related requirements through innovative and technology-driven solutions. My role involves not only conducting thorough automation and APIs testing but also gaining proficiency in <span className='highlight-text'>Java Selenium, C# BDD Specflow, and RestSharp.</span></p>
                 <p>
-                Key Achievements and Responsibilities:
+                <strong>Key Achievements and Responsibilities:</strong>
                 <br></br>
-                🔍 Client Collaboration: Collaborating closely with Marsh McLennan, a prominent client in the advisory space, specializing in health, wealth, and career-related solutions through technology-driven strategies.
+                🔍 <strong>Client Collaboration: </strong>Collaborating closely with Marsh McLennan, a prominent client in the advisory space, specializing in health, wealth, and career-related solutions through technology-driven strategies.
                 <br></br>
-                👩‍💻 Testing Expertise: Conducting extensive testing of production bugs and executing automated testing processes to ensure the seamless functionality of critical systems.
+                👩‍💻 <strong>Testing Expertise:</strong> Conducting extensive testing of production bugs and executing automated testing processes to ensure the seamless functionality of critical systems.
                 <br></br>
-                🛠️ Tool Proficiency: Acquiring proficiency in Java Selenium and C# BDD Specflow, and gaining hands-on experience with project management tools such as JIRA.
+                🛠️ <strong>Tool Proficiency: </strong>Acquiring proficiency in <span className='highlight-text'>Java Selenium and C# BDD Specflow</span>, and gaining hands-on experience with project management tools such as JIRA.
                 <br></br>
-                📚 Training and Skill Enhancement: Underwent a comprehensive one-month training program, focusing on Java and MySQL languages, Java Selenium framework, and project management tools like JIRA.
+                📚 <strong>Training and Skill Enhancement:</strong> Underwent a comprehensive one-month training program, focusing on Java and MySQL languages, Java Selenium framework, and project management tools like JIRA.
                 <br></br>
-                🤝 Team Collaboration: Worked collaboratively in a dynamic team of five members during the training period, contributing to the development of detailed test cases for the flight and hotel booking platform, via.com.
+                🤝 <strong>Team Collaboration:</strong> Worked collaboratively in a dynamic team of five members during the training period, contributing to the development of detailed test cases for the flight and hotel booking platform, via.com.
+                <br></br>
+                <strong>🚀 Innovation with POC:</strong> Piloted a Proof of Concept (POC) utilizing the innovative 'ACTS' tool to streamline test scenario generation, <span className='highlight-text'>achieving a 40% reduction in manual testing efforts and a 30% improvement in testing coverage.</span>
                 <br></br>
                 I am passionate about leveraging technology to address complex business challenges and keen on continuous learning to stay at the forefront of software engineering.
                 </p>
@@ -102,25 +114,25 @@ function MyVerticallyCenteredModal(props) {
         )}
         {props.role === "Full Stack Web Development Intern" && (
             <div>
-                <p>Collaborated on an e-commerce website project, using Flask, JavaScript, and SQLite, resulting in a 20% reduction in website loading time and a 30% increase in user engagement metrics.
+                <p>Collaborated on an e-commerce website project, using Flask, JavaScript, and SQLite, resulting in a 20% reduction in website loading time and a <span className='highlight-text'>30% increase in user engagement metrics.</span>
                 </p>
             </div>
         )}
         {props.org === "Code13 Edutech Private Limited" && (
             <div>
-                <p>During my internship at Code13 Edutech Private Limited, I led a team of eight members as a Full Stack Developer to create a cutting-edge digital marketing website, significantly elevating the company's online presence. Our team utilized a robust technology stack, including PHP, HTML, CSS, MySQL, and Bootstrap, to develop a user-friendly and visually appealing website. By enhancing the administrative panel with senior developers, we streamlined workflow and user experience, which led to a 15% reduction in development time through analytical skills and problem-solving.
+                <p>During my internship at Code13 Edutech Private Limited, I <span className='highlight-text'>led a team of eight members</span> as a Full Stack Developer to create a cutting-edge digital marketing website, significantly elevating the company's online presence. Our team utilized a robust technology stack, including PHP, HTML, CSS, MySQL, and Bootstrap, to develop a user-friendly and visually appealing website. By enhancing the administrative panel with senior developers, we streamlined workflow and user experience, which led to a 15% reduction in development time through analytical skills and problem-solving.
                 </p>
                 <p>
-                Key Contributions:
+                <strong>Key Contributions:</strong>
                 <br></br>
-                🌐 Digital Marketing Website Development: Spearheaded the creation of a dynamic website, increasing traffic by 25% and streamlining customer engagement.
+                🌐 <strong>Digital Marketing Website Development:</strong> Spearheaded the creation of a dynamic website, increasing traffic by 25% and streamlining customer engagement.
                 <br></br>
-                🔧 Technology Stack: Employed PHP, HTML, CSS, MySQL, and Bootstrap to deliver a comprehensive web solution.
+                🔧 <strong>Technology Stack:</strong> Employed PHP, HTML, CSS, MySQL, and Bootstrap to deliver a comprehensive web solution.
                 <br></br>
-                🤝 Collaboration with Senior Developers: Worked closely with senior developers to upgrade the administration panel using Object-oriented programming (OOP) principles, enhancing capacity to support up to 100 concurrent users and improving overall functionality and efficiency.
+                🤝 <strong>Collaboration with Senior Developers:</strong> Worked closely with senior developers to upgrade the administration panel using <span className='highlight-text'>Object-oriented programming (OOP) principles</span>, enhancing capacity to support up to 100 concurrent users and improving overall functionality and efficiency.
                 </p>
                 <p>
-                This experience not only allowed me to apply my technical skills in a real-world setting but also provided valuable insights into collaborative development and project management, preparing me for new challenges in the ever-evolving field of web development.
+                This experience not only allowed me to apply my technical skills in a real-world setting but also provided valuable insights into <span className='highlight-text'>collaborative development and project management,</span> preparing me for new challenges in the ever-evolving field of web development.
                 </p>
             </div>
         )}
@@ -128,7 +140,7 @@ function MyVerticallyCenteredModal(props) {
         <Modal.Footer>
           <Button onClick={props.onHide}>Close</Button>
         </Modal.Footer>
-      </Modal>
+        </Modal>
     );
   }
 
@@ -167,13 +179,13 @@ function Home() {
                         Driven by innovation and versatility in Full-Stack Development, Software Engineering, DevOps, and Machine Learning—ready to tackle complex challenges across the tech landscape.
                         </p>
                         <Row className='text-left buttons-resume-wwm'>
-                            <Col>
-                                <Button size="lg" href='/myResume'>
+                            <Col sm>
+                                <Button size="lg" href='#myResume'>
                                     Resume
                                 </Button>
                             </Col>
-                            <Col>
-                                <Button size="lg" className='work-with-me' onClick={handleShow}>
+                            <Col sm>
+                                <Button size="lg" className='work-with-me' onClick={() => document.getElementById('myResume').scrollIntoView({ behavior: 'smooth' })}>
                                     Work With Me
                                 </Button>
                             </Col>
@@ -239,15 +251,15 @@ function Home() {
             </Container>
             <div fluid className='three-achv' id='three-achv'>
                     <Row className='text-center' >
-                        <Col>
+                        <Col sm>
                             <Image src={website} className="img-achv-icons" />
                             <p className="normal-content">Built Over 3 Websites</p>
                         </Col>
-                        <Col>
+                        <Col sm>
                             <Image src={exp} className="img-achv-icons" />
                             <p className="normal-content">2+ Years of Experience</p>
                         </Col>
-                        <Col>
+                        <Col sm>
                             <Image src={cert} className="img-achv-icons" />
                             <p className="normal-content">Amazon Web Services Certified</p>
                         </Col>
@@ -255,76 +267,125 @@ function Home() {
             </div>
             <Container fluid id='skills' className='to-the-left'>
                 <Row>
-                    <p className='heading1' id='skillsheading1'>
-                        <span className="featured-text">Featured</span> <span className="skills-text">Skills</span>
+                    <Col sm>
+                        <Row>
+                            <p className='heading1' id='skillsheading1'>
+                                <span className="featured-text">FEATURED</span> <br></br><span className="skills-text">SKILLS</span>
+                            </p>
+                        </Row>
+                        <Row xs="auto" className='contact-row g-3 align-items-center' id='fs'>
+                            <Col className="text-center">
+                                <Image src={python} />
+                            </Col>
+                            <Col className="text-center">
+                                <Image src={golang} />
+                            </Col>
+                            <Col className="text-center">
+                                <Image src={js} />
+                            </Col>
+                            <Col className="text-center">
+                                <Image src={java} />
+                            </Col>
+                            <Col className="text-center">
+                                <Image src={html} />
+                            </Col>
+                            <Col className="text-center">
+                                <Image src={css} />
+                            </Col>
+                            <Col className="text-center">
+                                <Image src={node} />
+                            </Col>
+                            <Col className="text-center">
+                                <Image src={react} />
+                            </Col>
+                            <Col className="text-center">
+                                <Image src={mysql} />
+                            </Col>
+                            <Col className="text-center">
+                                <Image src={mongo} />
+                            </Col>
+                            <Col className="text-center">
+                                <Image src={postgres} />
+                            </Col>
+                        </Row>
+                        <Row xs="auto" className='contact-row g-3 align-items-center' id='cloud'>
+                            <Col className="text-center">
+                                <Image src={kubernetes} />
+                            </Col>
+                            <Col className="text-center">
+                                <Image src={docker} />
+                            </Col>
+                            <Col className="text-center">
+                                <Image src={aws} />
+                            </Col>
+                        </Row>  
+                    </Col>
+                    <Col sm>
+                        <Row>
+                            <p className='heading1' id='skillsheading1'>
+                                <span className="featured-text2">ALL</span> <br></br><span className="skills-text">SKILLS</span>
+                            </p>
+                        </Row>
+                        <Row className='contact-row' id='allskills'>
+                        <Col sm>
+                            <p>
+                                <span className='yellow-highlight-spans'>Languages & Frameworks: </span>
+                                C++, C#, <span className='highlight-text'>Python</span>, <span className='highlight-text'>Java</span>, <span className='highlight-text'>Go</span>, Flask, Express, Bootstrap, <span className='highlight-text'>Spring Boot</span>, NumPy
+                            </p>
+                            <p>
+                                <span className='yellow-highlight-spans'>Web Technologies: </span>
+                                HTML5, CSS3, PHP, <span className='highlight-text'>JavaScript</span>, <span className='highlight-text'>Node.js</span>, <span className='highlight-text'>React.js</span>, REST, AngularJS, Ajax, API, Express.js
+                            </p>
+                            <p>
+                                <span className='yellow-highlight-spans'>DevOps Tools: </span>
+                                Git, <span className='highlight-text'>Kubernetes</span>, <span className='highlight-text'>Docker</span>, Jenkins <span className='highlight-text'>(CI/CD)</span>, Ansible, Nginx, <span className='highlight-text'>Selenium</span>, JUnit
+                            </p>
+                            <p>
+                                <span className='yellow-highlight-spans'>Database: </span>
+                                MySQL, NoSQL, <span className='highlight-text'>MongoDB</span>, PostgreSQL, PL/SQL, Cassandra, DynamoDB
+                            </p>
+                            <p>
+                                <span className='yellow-highlight-spans'>Cloud Platforms and Tools: </span>
+                                <span className='highlight-text'>AWS EC2</span>, Azure, GCP, JIRA, Visual Studio, Eclipse, Spyder, MATLAB, Ubuntu
+                            </p>
+                        </Col>
+                        </Row>
+                    </Col>
+                </Row>
+            </Container>
+            <Container fluid id='education' className='to-the-left'>
+                <Row>
+                    <p className='heading1' id='edu-heading'>
+                        Education 
                     </p>
                 </Row>
-                <Row xs="auto" className='contact-row align-items-center justify-content-center h-100' id='fs'>
-                    <Col>
-                        <Image src={python} />
+                <Row className="align-items-center edu">
+                    <Col sm={3}>
+                        <Image src={sfState}></Image>
                     </Col>
-                    <Col>
-                        <Image src={golang} />
-                    </Col>
-                    <Col>
-                        <Image src={js} />
-                    </Col>
-                    <Col>
-                        <Image src={java} />
-                    </Col>
-                    <Col>
-                        <Image src={html} />
-                    </Col>
-                    <Col>
-                        <Image src={css} />
-                    </Col>
-                    <Col>
-                        <Image src={node} />
-                    </Col>
-                    <Col>
-                        <Image src={react} />
-                    </Col>
-                    <Col>
-                        <Image src={mysql} />
-                    </Col>
-                    <Col>
-                        <Image src={mongo} />
+                    <Col sm={9}>
+                        <div className="edu-details">
+                            <p className="degree">Master of Science in <span className='highlight-text'>Computer Science </span></p>
+                            <p className="institution">San Francisco State University, San Francisco, CA</p>
+                            <p className="duration">Aug 2023 - Expected May 2025</p>
+                        </div>
                     </Col>
                 </Row>
-                <Row xs="auto" className='contact-row align-items-center justify-content-center h-100' id='cloud'>
-                    <Col>
-                        <Image src={kubernetes} />
+                <Row className="align-items-center edu">
+                    <Col sm={3}>
+                        <Image src={dsi} className="edu-logo" />
                     </Col>
-                    <Col>
-                        <Image src={docker} />
-                    </Col>
-                    <Col>
-                        <Image src={aws} />
+                    <Col sm={9}>
+                        <div className="edu-dsi-details">
+                            <p className="degree">Bachelor of Science in 
+                                <span className='highlight-text'> Information Science & Engineering</span></p>
+                            <p className="institution">Visvesvaraya Technological University, India</p>
+                            <p className="duration">Aug 2018 - Jul 2022</p>
+                        </div>
                     </Col>
                 </Row>
                 <Row>
-                    <p className='heading1' id='skillsheading1'>
-                        <span className="featured-text2">All</span> <span className="skills-text">Skills</span>
-                    </p>
-                </Row>
-                <Row className='contact-row' id='allskills'>
-                    <Col sm>
-                        <p>
-                            <span>Languages & Frameworks: </span>
-                            C++, C#, Python, Java, Go, Flask, Express, Bootstrap, Spring Boot, NumPy, Matplotlib</p>
-                        <p>
-                            <span>Web Technologies: </span>
-                            HTML5, CSS3, PHP, JavaScript, Node.js, React.js, REST, AngularJS, Ajax, API, Express.js</p>
-                        <p>
-                            <span>DevOps Tools: </span>
-                            Git, Kubernetes, Docker, Jenkins (CI/CD), Ansible, Nginx, Selenium, JUnit</p>
-                        <p>
-                            <span>Database: </span>
-                            MySQL, NoSQL, MongoDB, PostgreSQL, PL/SQL, Cassandra, DynamoDB</p>
-                        <p>
-                            <span>Cloud Platforms and Tools: </span>
-                            AWS EC2, Azure, GCP, JIRA, Visual Studio, Eclipse, Spyder, MATLAB, Ubuntu</p>
-                    </Col>
+                    
                 </Row>
             </Container>
             <Container fluid id='experience' className='to-the-left'>
@@ -419,11 +480,11 @@ function Home() {
                                     <div>
                                         <p>
                                         <h3>Tech Stack: JavaScript, React.js, Node.js, Nginx, MySQL, AWS EC2, AWS RDS, Git</h3>
-                                        Led a collaborative team of five as the Team Lead for a groundbreaking Food Ordering web application project, focusing on backend development, animations, website responsiveness, and overseeing code deployment on AWS servers. This experience enhanced my technical expertise and emphasized the importance of leadership and responsibility in project management.
+                                        Led a collaborative team of five as the <span className='highlight-text'>Team Lead for a Food Ordering web application project</span>, focusing on <span className='highlight-text'>backend development, animations, website responsiveness, and overseeing code deployment on AWS servers.</span> This experience enhanced my technical expertise and emphasized the importance of leadership and responsibility in project management.
                                     
                                         <br></br>
                                     
-                                        <span>Key Achievements and Learnings:</span>
+                                        <span className='pd-spans'>Key Achievements and Learnings:</span>
                                         <br></br>
                                     
                                         <strong>Team Leadership:</strong> Guided a diverse team, leveraging individual strengths to meet project goals. Managed critical challenges effectively, developing strong skills in responsibility and working under pressure.
@@ -432,7 +493,7 @@ function Home() {
                                         <strong>Communication and Collaboration:</strong> Maintained team alignment and focus, ensuring cohesive workflow and optimal productivity amid potential distractions.
                                         <br></br>
                                     
-                                        <strong>AWS Deployment:</strong> Successfully deployed the application on AWS EC2 servers and managed the database on AWS RDS, demonstrating proficiency in cloud-based technologies.
+                                        <strong>AWS Deployment:</strong> <span className='highlight-text'>Successfully deployed the application</span> on AWS EC2 servers and managed the database on AWS RDS, demonstrating proficiency in cloud-based technologies.
                                         <br></br>
                                     
                                         <strong>Technological Stack:</strong> Utilized NodeJS, Express, React, Nginx, and MySQL 8.0.33, gaining hands-on experience with these tools for the first time.
@@ -441,22 +502,22 @@ function Home() {
                                         <strong>Tool Proficiency:</strong> Adapted to using Visual Studio Code as the primary Integrated Development Environment (IDE).
                                         <br></br>
                                     
-                                        <strong>Technical Contributions:</strong> Directed backend development and Twitter API integration, while ensuring website responsiveness with responsive design, which improved page load speed by 40%. Designed secure database schemas, adhering to best practices.
+                                        <strong>Technical Contributions:</strong> <span className='highlight-text'>Directed backend development</span> and <span className='highlight-text'>Twitter API integration</span>, while ensuring website responsiveness with responsive design, which improved page load speed by 40%. Designed secure database schemas, adhering to best practices.
                                         <br></br>
                                     
-                                        <strong>Data-Driven Development:</strong> Applied data-driven techniques and design patterns, reducing git conflicts by 75% through efficient version control. Presented on testing, debugging, and best practices, earning 20 additional points.
+                                        <strong>Data-Driven Development:</strong> Applied data-driven techniques and design patterns, reducing git conflicts by 75% through efficient version control. Presented on testing, debugging, and best practices, <span className='highlight-text'>earning 20 additional points.</span>
                                         <br></br>
                                     
-                                        This project not only showcased my technical skills but also demonstrated my leadership and collaboration capabilities, applying cutting-edge technologies in a real-world scenario. I am eager to continue evolving and contributing to impactful projects in the dynamic field of web development.
+                                        This project not only showcased my technical skills but also demonstrated <span className='highlight-text'>my leadership and collaboration capabilities</span>, applying cutting-edge technologies in a real-world scenario. I am eager to continue evolving and contributing to impactful projects in the dynamic field of web development.
                                         </p>
                                         <Row>
-                                            <Col>
+                                            <Col sm>
                                                 <Image src={pc2}/>
                                             </Col>
-                                            <Col>
+                                            <Col sm>
                                                 <Image src={pc1}/>
                                             </Col>
-                                            <Col>
+                                            <Col sm>
                                                 <Image src={pc3}/>
                                             </Col>
                                         </Row>
@@ -480,27 +541,27 @@ function Home() {
                                         </h3>
 
                                         <p>
-                                            Developed and maintained a real-time data visualization platform to analyze passenger traffic at San Francisco International Airport (SFO). By leveraging a dataset of 35.3k rows, this platform improved data processing efficiency by 25%, enabling faster and more accurate insights.
+                                            Developed and maintained a real-time data visualization platform to analyze passenger traffic at San Francisco International Airport (SFO). By leveraging a dataset of 35.3k rows, this platform <span className='highlight-text'>improved data processing efficiency by 25%</span>, enabling faster and more accurate insights.
                                             
                                             <br></br>
                                             
-                                            Interactive visualizations built with D3.js on a Next.js web application, providing actionable insights into peak travel periods, airline performance, and passenger behavior. These insights led to a 30% improvement in decision-making speed for airport operations.
+                                            Interactive visualizations <span className='highlight-text'>built with D3.js on a Next.js web application</span>, providing actionable insights into peak travel periods, airline performance, and passenger behavior. These insights led to a 30% improvement in decision-making speed for airport operations.
                                             
                                             <br></br>
                                                                                         
-                                            Additionally, predictive analytics and comparative metrics were integrated to support strategic planning, reducing resource allocation time by 20% and enhancing overall operational efficiency.
+                                            Additionally, <span className='highlight-text'>predictive analytics and comparative metrics</span> were integrated to support strategic planning, reducing resource allocation time by 20% and enhancing overall operational efficiency.
                                         </p>
                                         <Row>
-                                            <Col>
+                                            <Col sm>
                                                 <Image src={sfo1}/>
                                             </Col>
-                                            <Col>
+                                            <Col sm>
                                                 <Image src={sfo2}/>
                                             </Col>
-                                            <Col>
+                                            <Col sm>
                                                 <Image src={sfo3}/>
                                             </Col>
-                                            <Col>
+                                            <Col sm>
                                                 <Image src={sfo4}/>
                                             </Col>
                                         </Row>
@@ -521,7 +582,7 @@ function Home() {
 
                                             <br></br>
 
-                                            <span>Key Achievements:</span>
+                                            <span className='pd-spans'>Key Achievements:</span>
                                             <br></br>
 
                                             <strong>Algorithm Development:</strong> Developed the Bi-RNN algorithm, tackling challenges in dataset reading and integration. Utilized Long Short Term Memory (LSTM) techniques, achieving 92% accuracy and an AUC of 91-95%.
@@ -546,60 +607,103 @@ function Home() {
             </Container>
             <Container fluid id='certifications' className='to-the-left'>
                 <Row>
-                    <p className='heading1'>
+                    <p className='heading1' id="certs-heading">
                         Certifications 
                     </p>
+                </Row>
+                <Row className='certs'>
+                    <Col sm>
+                        <Image src={awscertification}/>
+                    </Col>
+                    <Col sm className="position-relative">
+                        <div className="image-container">
+                            <Image src={ckad} className='ckad'/>
+                            <div className="spinner-overlay">
+                                <div className="spinner-border" role="status">
+                                    <span className="visually-hidden">Loading...</span>
+                                </div>
+                            </div>
+                        </div>
+                    </Col>
                 </Row>
             </Container>
             <Container fluid id='myResume' className='to-the-left'>
                 <Row>
-                    <p className='heading1' id='exp-heading'>
+                    <p className='heading1' id="resume-heading">
                         Resume 
                     </p>
                 </Row>
+                <Row className='text-center mx-auto'>
+                    <Col>
+                        <Image src={resume} className='img mx-auto'/>
+                    </Col>
+                    <Col className='mx-auto align-self-center'>
+                        <Row>
+                            <a href={resumePdf} download="Monisha_Mekala_Resume.pdf" className="download-link">
+                                <Button className="resume-download-btn mx-auto">
+                                    Download Resume
+                                </Button>
+                            </a>
+                        </Row>
+                        <Row>
+                            <Form 
+                                id="contact-me-form" 
+                                name="contact" 
+                                method="POST" 
+                                data-netlify="true" 
+                                data-netlify-honeypot="bot-field"
+                            >
+                                <input type="hidden" name="form-name" value="contact" />
+                                <p className="heading1">Talk To Me!</p>
+                                <Form.Group as={Row} className="mb-3" controlId="formPlaintextName">
+                                <Form.Label column sm="2">Name</Form.Label>
+                                <Col sm="10">
+                                    <Form.Control type="text" name="name" required />
+                                </Col>
+                                </Form.Group>
+                                <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
+                                <Form.Label column sm="2">Email</Form.Label>
+                                <Col sm="10">
+                                    <Form.Control type="email" name="email" required />
+                                </Col>
+                                </Form.Group>
+                                <Form.Group as={Row} className="mb-3" controlId="formPlaintextMessage">
+                                <Form.Label column sm="2">Message</Form.Label>
+                                <Col sm="10">
+                                    <Form.Control as="textarea" rows={3} name="message" />
+                                </Col>
+                                </Form.Group>
+                                <Button type="submit">Send</Button>
+                            </Form>
+                        </Row>
+                    </Col>
+                </Row>
             </Container>
-
-            <Modal show={show} onHide={handleClose} >
-                <Modal.Header closeButton>
-                <Modal.Title>Let's Work Together</Modal.Title>
-                </Modal.Header>
-                <Modal.Body>
-                    <Form>
-                        <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
-                            <Form.Label column sm="2">
-                                Name
-                            </Form.Label>
-                            <Col sm="10">
-                                <Form.Control type='text' required/>
-                            </Col>
-                        </Form.Group>
-                        <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
-                            <Form.Label column sm="2">
-                                Email
-                            </Form.Label>
-                            <Col sm="10">
-                                <Form.Control type='email' required/>
-                            </Col>
-                        </Form.Group>
-                        <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
-                            <Form.Label column sm="2">
-                                Message
-                            </Form.Label>
-                            <Col sm="10">
-                                <Form.Control as="textarea" rows={3} />
-                            </Col>
-                        </Form.Group>
-                    </Form>
-                </Modal.Body>
-                <Modal.Footer>
-                <Button className='modalButtons' onClick={handleClose}>
-                    Close
-                </Button>
-                <Button className='modalButtons' onClick={handleClose}>
-                    Save Changes
-                </Button>
-                </Modal.Footer>
-            </Modal>
+            <Container fluid id='footer' className='to-the-left'>
+                <Row className='footer-row'>
+                    <Col sm={8}>
+                        <p className='heading1' id="footer-name">MONISHA MEKALA</p>
+                        <p className="small-text">
+                            San Francisco, CA 94132
+                        </p>
+                    </Col>
+                    <Col sm={4} id="footer-content">
+                        <p className='normal-content'>
+                            <a href="mailto:mvn.monisha@gmail.com" target="_blank" rel="noopener noreferrer">
+                                at: mvn.monisha@gmail.com
+                            </a>
+                            <br></br>
+                            <a href="https://www.linkedin.com/in/monisha-mekala/" target="_blank" rel="noopener noreferrer">
+                                linked: monisha-mekala
+                            </a>
+                            <br></br>
+                            <a href="https://github.com/monishamekala" target="_blank" rel="noopener noreferrer">
+                                git: monishamekala
+                            </a>
+                        </p>
+                    </Col>
+                </Row>
+            </Container>
 
             <MyVerticallyCenteredModal
                 show={GRA}

@@ -1,7 +1,7 @@
 .img-thumbnail {
     background-color: transparent !important;
     border: none !important;
-    border-radius: 20px !important;
+    border-radius: 50px !important;
     width: auto;
 }
 
@@ -128,13 +128,15 @@
 }
 
 #getToKnowMe.heading1 {
-    font-size: 60px;
+    font-size: 65px;
     margin-bottom: 0% !important;
+    font-weight: 700 !important;
 }
 
 #getToKnowMe.heading2 {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
+    line-height: 1.2;
 
 }
 div.card {
@@ -150,7 +152,8 @@ div.card {
     padding-left: 10px;
     margin-bottom: 0% !important;
     font-family: "Cormorant Garamond", serif;
-    font-size: 24px;
+    font-size: 18px !important;
+    font-weight: 700 !important;
 }
 
 @media (max-width: 480px) {
@@ -163,18 +166,6 @@ div.card {
     div.card {
         margin-top: 10px;
     }    
-}
-
-.fade-in-section {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-/* Visible state */
-.fade-in-section.is-visible {
-    opacity: 1;
-    transform: translateY(0);
 }
 
 Button.modalButtons {
@@ -199,7 +190,9 @@ Button.modalButtons {
     padding-top: 30px;
     padding-bottom: 30px;
     font-size: 60px !important;
-    text-align: center !important;
+    /* text-align: center !important; */
+    line-height: 1;
+    font-weight: 600;
 }
 
 img.img-achv-icons {
@@ -256,10 +249,6 @@ img.img-achv-icons {
     padding-top: 35px !important;
 }
 
-.allSkills .card-body p {
-    white-space: normal; /* Allow text to wrap */
-    word-wrap: break-word; 
-}
 
 #findMe.card {
     max-width: 18rem;
@@ -287,40 +276,70 @@ img.img-achv-icons {
     background-color: #ebe9e5;
 }
 
-.allSkills .card {
-    flex: 1 0 18rem;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-right: 1rem; /* Space between cards */
-    background-color: #ebe9e5 !important;
-    border: none !important;
+.contact-row img {
+    transition: transform 0.3s ease; /* Smooth hover effect */
 }
 
-.allSkills .card-header {
-    border-bottom: 0cm !important;
-    background-color: #ebe9e5 !important;
-    font-family: "Cormorant Garamond", serif;
-    font-size: 20px;
-    font-weight: 700 !important;
-    color: #202434;
-    text-decoration: underline #202434;
+.contact-row img:hover {
+    transform: scale(1.2); /* Slight zoom on hover */
 }
 
 #allskills.contact-row {
     color: #ebe9e5 !important;
     font-family: "Cormorant Garamond", serif;
-    text-align: center !important;
 }
 
 #allskills p {
     font-size: 23px;
 }
 
-#allskills span {
+#allskills .yellow-highlight-spans {
     font-size: 30px;
     color: #c1b680 !important;
     font-weight: 500;
+}
+
+#education.to-the-left {
+    background-color: #ebe9e5;
+    font-family: "Cormorant Garamond", serif;
+}
+
+#edu-heading.heading1 {
+    padding-top: 0px !important;
+    font-weight: 600;
+}
+
+.edu {
+    padding-bottom: 30px !important;
+}
+
+.edu-details {
+    border-bottom: 2px solid #05428a;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.edu-dsi-details {
+    border-bottom: 2px solid #e56214;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.degree {
+    font-size: 22px;
+    font-weight: bold;
+    color: #202434;
+}
+
+.institution {
+    font-size: 18px;
+    font-weight: 600;
+    color: #202434;
+}
+
+.duration {
+    font-size: 18px;
+    color: #202434;
 }
 
 #experience.to-the-left {
@@ -393,10 +412,18 @@ img.img-achv-icons {
 #projects.to-the-left {
     background-color: #c6c2cd !important;
     height: auto;
-    padding-left: 160px !important;
-    padding-right: 160px !important;
+    padding-left: 6% !important;
+    padding-right:6% !important;
+    border-top: black solid;
+    border-bottom: black solid;
 }
 
+#project-heading.heading1 {
+    color: #202434;
+    font-size: 70px !important;
+    font-weight: 600;
+    padding-bottom: 50px;
+}
 
 .project-option {
     cursor: pointer;
@@ -437,7 +464,7 @@ img.img-achv-icons {
     font-weight: 700;
 }
 
-.project-description span{
+.pd-spans{
     color: #c1b680;
     font-weight: 700;
     font-size: 30px;
@@ -454,4 +481,129 @@ img.img-achv-icons {
 
 .download-link {
     text-decoration: none;
+}
+
+#certifications.to-the-left {
+    padding-left: 6% !important;
+    padding-right: 6% !important;
+    background-color: #ebe9e5;
+}
+
+#certs-heading.heading1 {
+    color: #202434;
+    font-size: 65px !important;
+    font-weight: 600;
+    padding-bottom: 50px;
+}
+
+.certs > .col{
+    padding: 30px !important;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.spinner-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #c6c2cda6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spinner-border {
+    color: #202434 !important;
+}
+
+#myResume.to-the-left {
+    background-color: #ffffff;
+    padding-left: 6% !important;
+    padding-right: 6% !important;
+    padding-bottom: 60px !important;
+    border-bottom: black solid;
+    border-radius: 0px 0px 80px 80px;
+    z-index: 2;
+    position: relative;
+}
+
+#resume-heading.heading1 {
+    color: #202434;
+    font-size: 70px !important;
+    font-weight: 600;
+    text-align: center !important;
+}
+
+#contact-me-form {
+    margin-top: 8%;
+    border: #202434 solid;
+    border-radius: 10px;
+    padding: 30px 30px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+    color: #202434 !important;
+    font-weight: 500;
+}
+
+#contact-me-form:hover {
+    transform: scale(1.02);
+    z-index: 8;
+}
+
+#contact-me-form .heading1 {
+    font-size: 40px !important;
+    font-weight: 500;
+}
+#footer.to-the-left {
+    background-color: #c6c2cd;
+    padding: 80px 6% 80px 6% !important;
+    margin-top: -80px;
+    z-index: 1;
+}
+
+.footer-row {
+    padding: 50px 0px;
+}
+
+#footer-name.heading1 {
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 0px !important;
+}
+
+#footer-content p {
+    font-size: 18px;
+    font-weight: 800 !important;
+    margin-bottom: 0px !important;
+    color: #202434 !important;
+    text-align: left;
+    line-height: 1.2;
+}
+
+.small-text {
+    font-size: 20px; 
+    color: #af140c; 
+    margin-top: -10px;
+    font-family: "Cormorant Garamond", serif; 
+}
+
+#footer-content a {
+    text-decoration: none !important;
+    color: #202434;
+    transition: color 0.3s ease;
+}
+
+#footer-content a:hover {
+    color: #05428a; 
+    text-decoration: underline !important;
+}
+
+span.highlight-text {
+    color: #af140c;
+    font-weight: 500;
 }
