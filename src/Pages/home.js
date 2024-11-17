@@ -612,10 +612,8 @@ function Home() {
                     <Col sm className="position-relative">
                         <div className="image-container">
                             <Image src={ckad} className='ckad'/>
-                            <div className="spinner-overlay">
-                                <div className="spinner-border" role="status">
-                                    <span className="visually-hidden">Loading...</span>
-                                </div>
+                            <div className="badge-overlay">
+                                <span>In Progress</span>
                             </div>
                         </div>
                     </Col>
