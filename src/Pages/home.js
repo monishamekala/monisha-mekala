@@ -50,6 +50,10 @@ import resumePdf from '../Assets/Monisha_Mekala_Resume.pdf';
 import pcInfo from '../Assets/Monisha Mekala Pizza Craze Project.pdf';
 import plus from '../Assets/plus.svg';
 import minus from '../Assets/minus.svg';
+
+import aHoliday from '../Assets/aHoliday.png';
+
+import link from '../Assets/link.svg';
 import '../Styles/home.css';
 
 function MyVerticallyCenteredModal(props) {
@@ -154,10 +158,11 @@ function Home() {
     const [selectedProject, setSelectedProject] = useState(null);
 
     const projects = [
-        { id: 1, title: "Student Dropout & Academic Success Prediction", description: "Description of Student Dropout & Academic Success Prediction Project." },
-        { id: 2, title: "Food Ordering Application", description: "Description of Food Ordering Application." },
-        { id: 3, title: "SFO Passenger Traffic Visualization System", description: "Description of SFO Passenger Traffic Visualization System." },
-        { id: 4, title: "Early Detection of Alzheimer’s Disease with Blood Plasma using Bi-Recurrent Neural Network", description: "Description of Alzheimer’s Disease Detection Project." }
+        { id: 1, title: "3D Virtual Reality Environment for Training Civil Engineering Students", description: "Description of VREE Project." },
+        { id: 2, title: "Student Dropout & Academic Success Prediction", description: "Description of Student Dropout & Academic Success Prediction Project." },
+        { id: 3, title: "Food Ordering Application", description: "Description of Food Ordering Application." },
+        { id: 4, title: "SFO Passenger Traffic Visualization System", description: "Description of SFO Passenger Traffic Visualization System." },
+        { id: 5, title: "Early Detection of Alzheimer’s Disease with Blood Plasma using Bi-Recurrent Neural Network", description: "Description of Alzheimer’s Disease Detection Project." }
     ];
 
     const toggleProject = (id) => {
@@ -267,139 +272,53 @@ function Home() {
                     </p>
                 </Row>
                 <Row className="justify-content-md-center exp-rows">
-                <Row xs="auto" className='justify-content-md-center exp-rows contact-row' id='fs'>
-                            <Col className="text-center">
-                                <Image src={python} />
-                            </Col>
-                            <Col className="text-center">
-                                <Image src={golang} />
-                            </Col>
-                            <Col className="text-center">
-                                <Image src={js} />
-                            </Col>
-                            <Col className="text-center">
-                                <Image src={java} />
-                            </Col>
-                            <Col className="text-center">
-                                <Image src={html} />
-                            </Col>
-                            <Col className="text-center">
-                                <Image src={css} />
-                            </Col>
-                            <Col className="text-center">
-                                <Image src={node} />
-                            </Col>
-                            <Col className="text-center">
-                                <Image src={react} />
-                            </Col>
-                            <Col className="text-center">
-                                <Image src={mysql} />
-                            </Col>
-                            <Col className="text-center">
-                                <Image src={mongo} />
-                            </Col>
-                            <Col className="text-center">
-                                <Image src={postgres} />
-                            </Col>
-                </Row>
-                <Row xs="auto" className='justify-content-md-center exp-rows contact-row' id='cloud'>
-                    <Col className="text-center">
-                        <Image src={kubernetes} />
-                    </Col>
-                    <Col className="text-center">
-                        <Image src={docker} />
-                    </Col>
-                    <Col className="text-center">
-                        <Image src={aws} />
-                    </Col>
-                </Row> 
-                </Row>
-                {/* <Row>
-                    <Col sm>
-                        <Row>
-                            <p className='heading1' id='skillsheading1'>
-                                <span className="featured-text">FEATURED</span> <br></br><span className="skills-text">SKILLS</span>
-                            </p>
-                        </Row>
-                        <Row xs="auto" className='contact-row g-3 align-items-center' id='fs'>
-                            <Col className="text-center">
-                                <Image src={python} />
-                            </Col>
-                            <Col className="text-center">
-                                <Image src={golang} />
-                            </Col>
-                            <Col className="text-center">
-                                <Image src={js} />
-                            </Col>
-                            <Col className="text-center">
-                                <Image src={java} />
-                            </Col>
-                            <Col className="text-center">
-                                <Image src={html} />
-                            </Col>
-                            <Col className="text-center">
-                                <Image src={css} />
-                            </Col>
-                            <Col className="text-center">
-                                <Image src={node} />
-                            </Col>
-                            <Col className="text-center">
-                                <Image src={react} />
-                            </Col>
-                            <Col className="text-center">
-                                <Image src={mysql} />
-                            </Col>
-                            <Col className="text-center">
-                                <Image src={mongo} />
-                            </Col>
-                            <Col className="text-center">
-                                <Image src={postgres} />
-                            </Col>
-                        </Row>
-                        <Row xs="auto" className='contact-row g-3 align-items-center' id='cloud'>
-                            <Col className="text-center">
-                                <Image src={kubernetes} />
-                            </Col>
-                            <Col className="text-center">
-                                <Image src={docker} />
-                            </Col>
-                            <Col className="text-center">
-                                <Image src={aws} />
-                            </Col>
-                        </Row>  
-                    </Col>
-                    <Col sm>
-                        <Row>
-                            <p className='heading1' id='skillsheading1'>
-                                <span className="featured-text2">ALL</span> <br></br><span className="skills-text">SKILLS</span>
-                            </p>
-                        </Row>
-                        <Row className='contact-row' id='allskills'>
-                        <Col sm>
-                            <p>
-                                <span className='yellow-highlight-spans'>Languages & Frameworks: </span>
-                                C++, C#, <span className='highlight-text'>Python</span>, <span className='highlight-text'>Java</span>, <span className='highlight-text'>Go</span>, Flask, Express, Bootstrap, <span className='highlight-text'>Spring Boot</span>
-                            </p>
-                            <p>
-                                <span className='yellow-highlight-spans'>Web Technologies: </span>
-                                HTML5, CSS3, PHP, <span className='highlight-text'>JavaScript</span>, <span className='highlight-text'>Node.js</span>, <span className='highlight-text'>React.js</span>, REST, AngularJS, Ajax, Express.js
-                            </p>
-                            <p>
-                                <span className='yellow-highlight-spans'>DevOps Tools: </span>
-                                Git, <span className='highlight-text'>Kubernetes</span>, <span className='highlight-text'>Docker</span>, Jenkins <span className='highlight-text'>(CI/CD)</span>, Ansible, Nginx, <span className='highlight-text'>Selenium</span>, JUnit
-                            </p>
-                            <p>
-                                <span className='yellow-highlight-spans'>Database: </span>
-                                MySQL, NoSQL, <span className='highlight-text'>MongoDB</span>, PostgreSQL, PL/SQL, Cassandra, DynamoDB
-                            </p>
-                            <p>
-                                <span className='yellow-highlight-spans'>Cloud Platforms and Tools: </span>
-                                <span className='highlight-text'>AWS EC2</span>, Microsoft Azure, Google Cloud Platform, JIRA, Visual Studio, Eclipse, Linux, Ubuntu
-                            </p>
+                    <Row xs="auto" className='justify-content-md-center' id='fs'>
+                                <Col className="text-center">
+                                    <Image src={python} />
+                                </Col>
+                                <Col className="text-center">
+                                    <Image src={golang} />
+                                </Col>
+                                <Col className="text-center">
+                                    <Image src={js} />
+                                </Col>
+                                <Col className="text-center">
+                                    <Image src={java} />
+                                </Col>
+                                <Col className="text-center">
+                                    <Image src={html} />
+                                </Col>
+                                <Col className="text-center">
+                                    <Image src={css} />
+                                </Col>
+                                <Col className="text-center">
+                                    <Image src={node} />
+                                </Col>
+                                <Col className="text-center">
+                                    <Image src={react} />
+                                </Col>
+                                <Col className="text-center">
+                                    <Image src={mysql} />
+                                </Col>
+                                <Col className="text-center">
+                                    <Image src={mongo} />
+                                </Col>
+                                <Col className="text-center">
+                                    <Image src={postgres} />
+                                </Col>
+                    </Row>
+                    <Row xs="auto" className='justify-content-md-center' id='cloud'>
+                        <Col className="text-center">
+                            <Image src={kubernetes} />
                         </Col>
-                        </Row>
-                    </Col>
-                </Row> */}
+                        <Col className="text-center">
+                            <Image src={docker} />
+                        </Col>
+                        <Col className="text-center">
+                            <Image src={aws} />
+                        </Col>
+                    </Row> 
+                </Row>
             </Container>          
             <Container fluid id='education' className='to-the-left'>
                 <Row>
@@ -431,9 +350,6 @@ function Home() {
                             <p className="duration">Aug 2018 - Jul 2022</p>
                         </div>
                     </Col>
-                </Row>
-                <Row>
-                    
                 </Row>
             </Container>
             <Container fluid id='certifications' className='to-the-left'>
@@ -547,6 +463,50 @@ function Home() {
                                 {selectedProject === 1 && (
                                     <div>
                                     <p>
+                                        <h3>Tech Stack: Unity 3D, C#, XR Interaction Toolkit, FBX, BIM, Unity Physics, Hinge Joints, Configurable Joints</h3>
+                                        Developed a Virtual Reality Environment for Engineering (VREE), an <span className='highlight-text'>SEAONC (Structural Engineers Association of Northern California) - sponsored VR-based serious game</span> designed to enhance civil engineering education by providing an immersive training environment for <span className='highlight-text'>post-earthquake damage assessment</span>. This project helps students and professionals inspect buildings, identify damages, and evaluate safety conditions following an earthquake.
+                            
+                                        <br></br>
+                            
+                                        <span className='pd-spans'>Key Achievements and Learnings:</span>
+                                        <br></br>
+                            
+                                        <strong>Developed an Interactive VR Training System:</strong> Created a <span className='highlight-text'>realistic damage assessment simulation</span> aligned with the <span className='highlight-text'>Safety Assessment Program (SAP)</span> of the Structural Engineers Association of Northern California (SEAONC).
+                                        <br></br>
+                            
+                                        <strong>Enhanced User Interactivity:</strong> Implemented <span className='highlight-text'>clickable damages</span> using the XR Ray Interactor, interactable doors with realistic physics, and a <span className='highlight-text'>VR Scoreboard</span> to track performance dynamically.
+                                        <br></br>
+                            
+                                        <strong>Expanded Virtual Environment:</strong> Built an <span className='highlight-text'>explorable 3D building interior</span> by adding realistic materials, lighting, and solidifying structures with colliders for a more immersive experience.
+                                        <br></br>
+                            
+                                        <strong>Redesigned Scoring System:</strong> Created a <span className='highlight-text'>dynamic VR scoreboard</span> that evaluates trainees' performance, with a modular system for easily adding new damages and assessments.
+                                        <br></br>
+                            
+                                        <strong>System Architecture Improvements:</strong> Refactored game logic following the <span className='highlight-text'>Single Responsibility Principle (SRP)</span>, separating damage registration, UI updates, and sound management for better maintainability.
+                                        <br></br>
+                            
+                                        <strong>Technology-Driven Education:</strong> Integrated <span className='highlight-text'>real-time structural physics simulation</span> to mimic real-world damage conditions, enhancing training effectiveness.
+                                        <br></br>
+                            
+                                        <strong>Future Enhancements:</strong> Developing a <span className='highlight-text'>multiplayer collaboration mode (VREEverse)</span>, integrating hazard warnings, and introducing virtual tools commonly used in structural inspections.
+                                        <br></br>
+                            
+                                        This project leverages cutting-edge Virtual Reality (VR) technology to revolutionize civil engineering education by providing a safe, cost-effective, and highly interactive training solution. 🚀
+                                    </p>
+                            
+                                    <Row className='d-flex justify-content-md-center'>
+                                        <Col>
+                                            <a href="https://github.com/monishamekala/VREE-earthquake-environment.git" target="_blank" rel="noopener noreferrer" className='d-flex justify-content-md-center download-link' >
+                                                <Button className='pc-button'>Github Repository</Button>
+                                            </a>
+                                        </Col>
+                                    </Row>
+                                    </div>
+                                )}
+                                {selectedProject === 2 && (
+                                    <div>
+                                    <p>
                                         <h3>Tech Stack: Python, R, Random Forest, Scikit-learn, Caret, Pandas, NumPy, Matplotlib, Seaborn, ggplot2</h3>
                                         Developed a <span className='highlight-text'>machine learning-based student success prediction model</span> to identify at-risk students, enabling educational institutions to <span className='highlight-text'>improve retention and optimize support strategies.</span> Conducted an AI ethics audit to ensure fairness, bias mitigation, and transparency in predictive analytics.
                                         
@@ -555,40 +515,40 @@ function Home() {
                                         <span className='pd-spans'>Key Achievements and Learnings:</span>
                                         <br></br>
                                         
-                                        <strong>Machine Learning Model Development:</strong> Built and trained a <span className='highlight-text'>Random Forest model</span> to classify students into **dropout, enrolled, or graduated** categories, achieving a balanced accuracy of 83.26%.
+                                        <strong>Machine Learning Model Development:</strong> Built and trained a <span className='highlight-text'>Random Forest model</span> to classify students into dropout, enrolled, or graduated categories, achieving a balanced accuracy of 83.26%.
                                         <br></br>
                                         
                                         <strong>Data Processing & Analysis:</strong> Processed and cleaned a dataset of <span className='highlight-text'>4,424 student records with 36 academic and socio-economic features</span>, ensuring high data quality and balanced class distributions.
                                         <br></br>
                                 
-                                        <strong>Model Performance Optimization:</strong> <span className='highlight-text'>Achieved 87.2% accuracy</span> in binary classification and 78.1% accuracy in multiclass classification, utilizing <span className='highlight-text'>cross-validation, AUC, sensitivity, and specificity metrics</span> for model validation.
+                                        <strong>Model Performance Optimization:</strong> <span className='highlight-text'>Achieved 87.2% accuracy</span> in binary classification and 78.1% accuracy in multiclass classification, utilizing cross-validation, AUC, sensitivity, and specificity metrics for model validation.
                                         <br></br>
                                 
-                                        <strong>Feature Importance Analysis:</strong> Identified key predictors of student success, such as <span className='highlight-text'>course performance, tuition status, and enrollment history</span>, providing actionable insights for intervention strategies.
+                                        <strong>Feature Importance Analysis:</strong> Identified key predictors of student success, such as course performance, tuition status, and enrollment history, providing actionable insights for intervention strategies.
                                         <br></br>
                                 
                                         <strong>AI Ethics & Trustworthiness Audit:</strong> Evaluated the model's fairness, potential biases, and privacy compliance, ensuring responsible and transparent deployment in educational settings.
                                         <br></br>
                                 
-                                        <strong>Data Visualization & Interpretation:</strong> Utilized <span className='highlight-text'>Matplotlib, Seaborn, and ggplot2</span> to create intuitive visualizations, making insights accessible for non-technical stakeholders.
+                                        <strong>Data Visualization & Interpretation:</strong> Utilized Matplotlib, Seaborn, and ggplot2 to create intuitive visualizations, making insights accessible for non-technical stakeholders.
                                         <br></br>
                                 
-                                        <strong>Machine Learning Pipeline Implementation:</strong> Developed and structured an <span className='highlight-text'>R-based modular ML workflow</span>, ensuring scalability and reproducibility for future model improvements.
+                                        <strong>Machine Learning Pipeline Implementation:</strong> Developed and structured an R-based modular ML workflow, ensuring scalability and reproducibility for future model improvements.
                                         <br></br>
                                 
-                                        This project not only showcased my **technical expertise in machine learning and data science** but also emphasized my **commitment to ethical AI**, ensuring that predictive models are transparent, fair, and practically useful in real-world education systems.
+                                        This project not only showcased my technical expertise in machine learning and data science but also emphasized my commitment to ethical AI, ensuring that predictive models are transparent, fair, and practically useful in real-world education systems.
                                     </p>
                                 
                                     <Row className='d-flex justify-content-md-center'>
                                         <Col>
                                             <a href="https://github.com/monishamekala/student-dropout-prediction" target="_blank" rel="noopener noreferrer" className='d-flex justify-content-md-center download-link' >
-                                                <Button className='pc-button'>Github Repo</Button>
+                                                <Button className='pc-button'>Github Repository</Button>
                                             </a>
                                         </Col>
                                     </Row>
                                 </div>
                                 )}
-                                {selectedProject === 2 && (
+                                {selectedProject === 3 && (
                                     <div>
                                         <p>
                                         <h3>Tech Stack: JavaScript, React.js, Node.js, Nginx, MySQL, AWS EC2, AWS RDS, Git</h3>
@@ -641,13 +601,13 @@ function Home() {
                                             </Col>
                                             <Col>
                                                 <a href="https://github.com/CSC-648-SFSU/csc648-04-fall23-team07-2" className='d-flex justify-content-md-center download-link' target="_blank" rel="noopener noreferrer">
-                                                    <Button className='pc-button'>Github Repo</Button>
+                                                    <Button className='pc-button'>Github Repository</Button>
                                                 </a>
                                             </Col>
                                         </Row>
                                     </div>
                                 )}
-                                {selectedProject === 3 && (
+                                {selectedProject === 4 && (
                                     <div>
                                         <h3>Tech Stack: The backend was powered by PostgreSQL for efficient data storage and retrieval, with Prisma and Node.js reducing database latency by 40% for smooth and scalable data handling. 
                                         </h3>
@@ -680,13 +640,13 @@ function Home() {
                                         <Row className='d-flex justify-content-md-center'>
                                             <Col>
                                                 <a href="https://github.com/monishamekala/dataVisualization-SFO-Airtraffic" target="_blank" rel="noopener noreferrer" className='d-flex justify-content-md-center download-link'>
-                                                    <Button className='pc-button'>Github Repo</Button>
+                                                    <Button className='pc-button'>Github Repository</Button>
                                                 </a>
                                             </Col>
                                         </Row>
                                     </div>
                                 )}
-                                {selectedProject === 4 && (
+                                {selectedProject === 5 && (
                                     <div>
                                         <h3>Tech Stack: Python, Jupyter Notebook, Numpy, TensorFlow, Scikit</h3>
                                         <p>
@@ -716,24 +676,39 @@ function Home() {
                     ))}
                 </Row>
             </Container>
-            <Container fluid id='myResume' className='to-the-left'>
+            <Container fluid id='publish' className='to-the-left'>
                 <Row>
-                    <p className='heading1' id="resume-heading">
-                        Resume 
+                    <p className='heading1' id="publish-heading">
+                        Publications 
                     </p>
                 </Row>
-                <Row className='text-center mx-auto align-self-center'>
-                    <Col sm>
-                        <Row>
-                            <a href={resumePdf} download="Monisha_Mekala_Resume.pdf" className="download-link">
-                                <Button className="resume-download-btn mx-auto">
-                                    Resume
-                                </Button>
+                <Row className='align-items-center'>
+                <Col sm>
+                    <Row>
+                        <Col>
+                            <div className="publish-details">
+                                <p className="publish-title">Early Detection of Alzheimer’s: Modalities and Methods</p>
+                                    <a href="https://irojournals.com/aicn/article/view/4/1/5" target="_blank" rel="noopener noreferrer">
+                                        <Button className='publish-btn-1'>View</Button>
+                                    </a>
+                            </div>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>
+                            <div className="publish-2-details">
+                            <p className="publish-title">Early Detection of Alzheimer’s using Blood Plasma Proteins with Recurrent Neural Networks</p>
+                            <a href="https://ijercse.com/viewabstract.php?id=16046&volume=Volume9&issue=Issue12" target="_blank" rel="noopener noreferrer">
+                                <Button className='publish-btn-2'>View</Button>
                             </a>
-                        </Row>
-                        <Image src={resume} className='img mx-auto'/>
-                    </Col>
-                </Row>
+                            </div>
+                        </Col>
+                    </Row>
+                </Col>
+                <Col className='d-flex justify-content-center align-items-center'>
+                    <Image src={aHoliday}/>
+                </Col>
+                </Row>         
             </Container>
             <Container fluid id='footer' className='to-the-left'>
                 <Row className='footer-row'>

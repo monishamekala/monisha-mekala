@@ -221,14 +221,6 @@ img.img-achv-icons {
     text-align: left !important;
 }
 
-#fs.contact-row {
-    margin-bottom: 10px !important;
-}
-
-#cloud.contact-row {
-    margin-bottom: 10px !important;
-}
-
 .skills-text {
     color: #626991 !important;
 }
@@ -333,6 +325,59 @@ img.img-achv-icons {
     color: #202434;
 }
 
+#publish.to-the-left {
+    background-color: #ffffff;
+    padding-left: 6% !important;
+    padding-right: 6% !important;
+    padding-bottom: 60px !important;
+    border-bottom: black solid;
+    border-radius: 0px 0px 80px 80px;
+    z-index: 2;
+    position: relative;
+}
+
+#publish-heading.heading1 {
+    padding-top: 0px !important;
+    font-weight: 600;
+}
+
+.publish-details {
+    /* background-color: #05428a; */
+    border-bottom: 2px solid #05428a;
+    padding: 15px 10px 25px 15px;
+    margin-bottom: 60px;
+}
+
+.publish-2-details {
+    /* background-color: #e56214; */
+    border-bottom: 2px solid #e56214;
+    padding: 15px 10px 25px 15px;
+    margin-bottom: 20px;
+}
+
+.publish-title {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 33px;
+    font-weight: bold;
+    color: #202434;
+}
+
+.publish-btn-1 {
+    background-color: #05428a !important;
+    border-radius: 20px !important;
+    margin-top: 1px !important;
+    font-size: 25px !important;
+    color: white !important;
+}
+
+.publish-btn-2 {
+    background-color: #e56214 !important;
+    border-radius: 20px !important;
+    margin-top: 1px !important;
+    font-size: 25px !important;
+    color: white !important;
+}
+
 .institution {
     font-size: 18px;
     font-weight: 600;
@@ -350,9 +395,9 @@ img.img-achv-icons {
     padding-right: 26% !important;
 }
 
-.exp-rows {
+/* .exp-rows {
     margin-bottom: 30px;
-}
+} */
 
 #exp-heading.heading1 {
     color: #202434;
@@ -525,17 +570,6 @@ img.img-achv-icons {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
     text-align: center;
     z-index: 10;
-}
-
-#myResume.to-the-left {
-    background-color: #ffffff;
-    padding-left: 6% !important;
-    padding-right: 6% !important;
-    padding-bottom: 60px !important;
-    border-bottom: black solid;
-    border-radius: 0px 0px 80px 80px;
-    z-index: 2;
-    position: relative;
 }
 
 #resume-heading.heading1 {
