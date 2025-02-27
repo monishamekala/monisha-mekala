@@ -357,7 +357,7 @@ img.img-achv-icons {
 
 .publish-title {
     font-family: "Cormorant Garamond", serif;
-    font-size: 33px;
+    font-size: 30px;
     font-weight: bold;
     color: #202434;
 }
@@ -391,8 +391,8 @@ img.img-achv-icons {
 
 #experience.to-the-left {
     padding-top: 10px !important;
-    padding-left: 26% !important;
-    padding-right: 26% !important;
+    padding-left: 20% !important;
+    padding-right: 20% !important;
 }
 
 /* .exp-rows {
@@ -540,15 +540,20 @@ img.img-achv-icons {
     border-bottom: black solid 1px;
 }
 
+#certifications .col.p-0 {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
 #certs-heading.heading1 {
     color: #202434;
     font-size: 65px !important;
     font-weight: 600;
 }
 
-.certs > .col{
+/* .certs > .col{
     padding: 30px !important;
-}
+} */
 
 .image-container {
     position: relative;

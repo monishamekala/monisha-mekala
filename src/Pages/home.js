@@ -49,6 +49,7 @@ import plus from '../Assets/plus.svg';
 import minus from '../Assets/minus.svg';
 
 import aHoliday from '../Assets/aHoliday.png';
+import aHoliday1 from '../Assets/aHoliday1.png';
 
 import '../Styles/home.css';
 
@@ -350,21 +351,28 @@ function Home() {
             </Container>
             <Container fluid id='certifications' className='to-the-left'>
                 <Row>
-                    <p className='heading1' id="certs-heading">
-                        Certifications 
-                    </p>
-                </Row>
-                <Row className='certs'>
+                    {/* <Col sm className="p-0">
+                        <Image src={aHoliday1}/>
+                    </Col> */}
                     <Col sm>
-                        <Image src={awscertification}/>
-                    </Col>
-                    <Col sm className="position-relative">
-                        <div className="image-container">
-                            <Image src={ckad} className='ckad'/>
-                            <div className="badge-overlay">
-                                <span>In Progress</span>
-                            </div>
-                        </div>
+                        <Row>
+                            <p className='heading1' id="certs-heading">
+                                Certifications 
+                            </p>
+                        </Row>
+                        <Row className='certs'>
+                            <Col sm={3}>
+                                <Image src={awscertification}/>
+                            </Col>
+                            <Col sm={9}>
+                                <div className="image-container">
+                                    <Image src={ckad}/>
+                                    <div className="badge-overlay">
+                                        <span>In Progress</span>
+                                    </div>
+                                </div>
+                            </Col>
+                        </Row>
                     </Col>
                 </Row>
             </Container>
