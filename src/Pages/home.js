@@ -44,16 +44,12 @@ import sfo4 from '../Assets/sfo4.jpeg';
 import awscertification from '../Assets/awsBadge.png';
 import ckad from '../Assets/ckad.png';
 
-import resume from '../Assets/monisha_mekala_resume.jpg';
-import resumePdf from '../Assets/Monisha_Mekala_Resume.pdf';
-
 import pcInfo from '../Assets/Monisha Mekala Pizza Craze Project.pdf';
 import plus from '../Assets/plus.svg';
 import minus from '../Assets/minus.svg';
 
 import aHoliday from '../Assets/aHoliday.png';
 
-import link from '../Assets/link.svg';
 import '../Styles/home.css';
 
 function MyVerticallyCenteredModal(props) {
