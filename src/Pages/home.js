@@ -154,9 +154,10 @@ function Home() {
     const [selectedProject, setSelectedProject] = useState(null);
 
     const projects = [
-        { id: 1, title: "Food Ordering Application", description: "Description of Food Ordering Application." },
-        { id: 2, title: "SFO Passenger Traffic Visualization System", description: "Description of SFO Passenger Traffic Visualization System." },
-        { id: 3, title: "Early Detection of Alzheimer’s Disease with Blood Plasma using Bi-Recurrent Neural Network", description: "Description of Alzheimer’s Disease Detection Project." }
+        { id: 1, title: "Student Dropout & Academic Success Prediction", description: "Description of Student Dropout & Academic Success Prediction Project." },
+        { id: 2, title: "Food Ordering Application", description: "Description of Food Ordering Application." },
+        { id: 3, title: "SFO Passenger Traffic Visualization System", description: "Description of SFO Passenger Traffic Visualization System." },
+        { id: 4, title: "Early Detection of Alzheimer’s Disease with Blood Plasma using Bi-Recurrent Neural Network", description: "Description of Alzheimer’s Disease Detection Project." }
     ];
 
     const toggleProject = (id) => {
@@ -174,7 +175,7 @@ function Home() {
                         </p>
                         <Row className='text-left buttons-resume-wwm'>
                             <Col sm>
-                                <Button size="lg" target="_blank" rel="noopener noreferrer" href='https://drive.google.com/file/d/1mtf34o3oPeDi17fxMJEMenV-svZLaOYA/view?usp=sharing'>
+                                <Button size="lg" target="_blank" rel="noopener noreferrer" href='https://drive.google.com/file/d/1ZrNRbw4tMDHFZNoOwrB_r1Sor-oQ6V1b/view?usp=sharing'>
                                     Resume
                                 </Button>
                             </Col>
@@ -261,6 +262,59 @@ function Home() {
             </div>
             <Container fluid id='skills' className='to-the-left'>
                 <Row>
+                    <p className='heading1 text-center skills-text' id='exp-heading'>
+                        SKILLS 
+                    </p>
+                </Row>
+                <Row className="justify-content-md-center exp-rows">
+                <Row xs="auto" className='justify-content-md-center exp-rows contact-row' id='fs'>
+                            <Col className="text-center">
+                                <Image src={python} />
+                            </Col>
+                            <Col className="text-center">
+                                <Image src={golang} />
+                            </Col>
+                            <Col className="text-center">
+                                <Image src={js} />
+                            </Col>
+                            <Col className="text-center">
+                                <Image src={java} />
+                            </Col>
+                            <Col className="text-center">
+                                <Image src={html} />
+                            </Col>
+                            <Col className="text-center">
+                                <Image src={css} />
+                            </Col>
+                            <Col className="text-center">
+                                <Image src={node} />
+                            </Col>
+                            <Col className="text-center">
+                                <Image src={react} />
+                            </Col>
+                            <Col className="text-center">
+                                <Image src={mysql} />
+                            </Col>
+                            <Col className="text-center">
+                                <Image src={mongo} />
+                            </Col>
+                            <Col className="text-center">
+                                <Image src={postgres} />
+                            </Col>
+                </Row>
+                <Row xs="auto" className='justify-content-md-center exp-rows contact-row' id='cloud'>
+                    <Col className="text-center">
+                        <Image src={kubernetes} />
+                    </Col>
+                    <Col className="text-center">
+                        <Image src={docker} />
+                    </Col>
+                    <Col className="text-center">
+                        <Image src={aws} />
+                    </Col>
+                </Row> 
+                </Row>
+                {/* <Row>
                     <Col sm>
                         <Row>
                             <p className='heading1' id='skillsheading1'>
@@ -345,9 +399,8 @@ function Home() {
                         </Col>
                         </Row>
                     </Col>
-                </Row>
-            </Container>
-            
+                </Row> */}
+            </Container>          
             <Container fluid id='education' className='to-the-left'>
                 <Row>
                     <p className='heading1' id='edu-heading'>
@@ -493,6 +546,50 @@ function Home() {
                                 <Row className="project-description">
                                 {selectedProject === 1 && (
                                     <div>
+                                    <p>
+                                        <h3>Tech Stack: Python, R, Random Forest, Scikit-learn, Caret, Pandas, NumPy, Matplotlib, Seaborn, ggplot2</h3>
+                                        Developed a <span className='highlight-text'>machine learning-based student success prediction model</span> to identify at-risk students, enabling educational institutions to <span className='highlight-text'>improve retention and optimize support strategies.</span> Conducted an AI ethics audit to ensure fairness, bias mitigation, and transparency in predictive analytics.
+                                        
+                                        <br></br>
+                                        
+                                        <span className='pd-spans'>Key Achievements and Learnings:</span>
+                                        <br></br>
+                                        
+                                        <strong>Machine Learning Model Development:</strong> Built and trained a <span className='highlight-text'>Random Forest model</span> to classify students into **dropout, enrolled, or graduated** categories, achieving a balanced accuracy of 83.26%.
+                                        <br></br>
+                                        
+                                        <strong>Data Processing & Analysis:</strong> Processed and cleaned a dataset of <span className='highlight-text'>4,424 student records with 36 academic and socio-economic features</span>, ensuring high data quality and balanced class distributions.
+                                        <br></br>
+                                
+                                        <strong>Model Performance Optimization:</strong> <span className='highlight-text'>Achieved 87.2% accuracy</span> in binary classification and 78.1% accuracy in multiclass classification, utilizing <span className='highlight-text'>cross-validation, AUC, sensitivity, and specificity metrics</span> for model validation.
+                                        <br></br>
+                                
+                                        <strong>Feature Importance Analysis:</strong> Identified key predictors of student success, such as <span className='highlight-text'>course performance, tuition status, and enrollment history</span>, providing actionable insights for intervention strategies.
+                                        <br></br>
+                                
+                                        <strong>AI Ethics & Trustworthiness Audit:</strong> Evaluated the model's fairness, potential biases, and privacy compliance, ensuring responsible and transparent deployment in educational settings.
+                                        <br></br>
+                                
+                                        <strong>Data Visualization & Interpretation:</strong> Utilized <span className='highlight-text'>Matplotlib, Seaborn, and ggplot2</span> to create intuitive visualizations, making insights accessible for non-technical stakeholders.
+                                        <br></br>
+                                
+                                        <strong>Machine Learning Pipeline Implementation:</strong> Developed and structured an <span className='highlight-text'>R-based modular ML workflow</span>, ensuring scalability and reproducibility for future model improvements.
+                                        <br></br>
+                                
+                                        This project not only showcased my **technical expertise in machine learning and data science** but also emphasized my **commitment to ethical AI**, ensuring that predictive models are transparent, fair, and practically useful in real-world education systems.
+                                    </p>
+                                
+                                    <Row className='d-flex justify-content-md-center'>
+                                        <Col>
+                                            <a href="https://github.com/monishamekala/student-dropout-prediction" target="_blank" rel="noopener noreferrer" className='d-flex justify-content-md-center download-link' >
+                                                <Button className='pc-button'>Github Repo</Button>
+                                            </a>
+                                        </Col>
+                                    </Row>
+                                </div>
+                                )}
+                                {selectedProject === 2 && (
+                                    <div>
                                         <p>
                                         <h3>Tech Stack: JavaScript, React.js, Node.js, Nginx, MySQL, AWS EC2, AWS RDS, Git</h3>
                                         Led a collaborative team of five as the <span className='highlight-text'>Team Lead for a Food Ordering web application project</span>, focusing on <span className='highlight-text'>backend development, animations, website responsiveness, and overseeing code deployment on AWS servers.</span> This experience enhanced my technical expertise and emphasized the importance of leadership and responsibility in project management.
@@ -543,14 +640,14 @@ function Home() {
                                                 </a>
                                             </Col>
                                             <Col>
-                                                <a href="https://github.com/CSC-648-SFSU/csc648-04-fall23-team07-2" className='d-flex justify-content-md-center download-link'>
+                                                <a href="https://github.com/CSC-648-SFSU/csc648-04-fall23-team07-2" className='d-flex justify-content-md-center download-link' target="_blank" rel="noopener noreferrer">
                                                     <Button className='pc-button'>Github Repo</Button>
                                                 </a>
                                             </Col>
                                         </Row>
                                     </div>
                                 )}
-                                {selectedProject === 2 && (
+                                {selectedProject === 3 && (
                                     <div>
                                         <h3>Tech Stack: The backend was powered by PostgreSQL for efficient data storage and retrieval, with Prisma and Node.js reducing database latency by 40% for smooth and scalable data handling. 
                                         </h3>
@@ -582,14 +679,14 @@ function Home() {
                                         </Row>
                                         <Row className='d-flex justify-content-md-center'>
                                             <Col>
-                                                <a href="https://github.com/supriyakr/airtraffic-sfo" className='d-flex justify-content-md-center download-link'>
+                                                <a href="https://github.com/monishamekala/dataVisualization-SFO-Airtraffic" target="_blank" rel="noopener noreferrer" className='d-flex justify-content-md-center download-link'>
                                                     <Button className='pc-button'>Github Repo</Button>
                                                 </a>
                                             </Col>
                                         </Row>
                                     </div>
                                 )}
-                                {selectedProject === 3 && (
+                                {selectedProject === 4 && (
                                     <div>
                                         <h3>Tech Stack: Python, Jupyter Notebook, Numpy, TensorFlow, Scikit</h3>
                                         <p>
@@ -613,7 +710,6 @@ function Home() {
                                         </p>
                                     </div>
                                 )}
-                                
                                 </Row>
                             )}
                         </div>

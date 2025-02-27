@@ -15,9 +15,9 @@ function TheNavbar() {
                 <Nav.Link href="#aboutMe">About Me</Nav.Link>
                 <Nav.Link href="#skills">Skills</Nav.Link>
                 <Nav.Link href="#education">Education</Nav.Link>
+                <Nav.Link href="#certifications">Certifications</Nav.Link>
                 <Nav.Link href="#experience">Experience</Nav.Link>
                 <Nav.Link href="#projects">Projects</Nav.Link>
-                <Nav.Link href="#certifications">Certifications</Nav.Link>
                 <Nav.Link href="#myResume">My Resume</Nav.Link>
               </Nav>
             </Navbar.Collapse>
