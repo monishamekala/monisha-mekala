@@ -67,12 +67,12 @@ function MyVerticallyCenteredModal(props) {
         </Modal.Header>
         <Modal.Body className='exp-modal'>
         <h4>{props.role}</h4>
-        {props.role === "Graduate Research Assistant" && (
+        {/* {props.role === "Graduate Research Assistant" && (
             <div>
                 <p>The VREE project is a collaborative initiative between the Department of Computer Science and the School of Engineering, aimed at <span className='highlight-text'>creating a 3D virtual reality environment</span> to train structural engineering students in post-earthquake damage analysis. This immersive VR training model educates students on identifying structural damage types within a realistic 3D environment.</p>
                 <p>My role focuses on advancing the existing desktop-based model to a fully immersive VR experience suitable for head-mounted display devices. <span className='highlight-text'>Using Unity, .NET, and C#</span>, I’m developing enhanced functionalities to create an engaging training platform that allows users to inspect structural integrity post-earthquake, enabling hands-on learning and improved educational outcomes.</p>
             </div>
-        )}
+        )} */}
         {props.org === "Associated Students of San Francisco State University" && (
             <div>
                 <p>As a part-time Web Developer Intern, I supported the university’s infrastructure by <span className='highlight-text'>managing AWS services and streamlining deployment processes.</span> This role allowed me to apply and <span className='highlight-text'>enhance my cloud computing and DevOps skills</span> while working within an Agile team environment.</p>
@@ -174,7 +174,7 @@ function Home() {
                         </p>
                         <Row className='text-left buttons-resume-wwm'>
                             <Col sm>
-                                <Button size="lg" href='#myResume'>
+                                <Button size="lg" target="_blank" rel="noopener noreferrer" href='https://drive.google.com/file/d/1mtf34o3oPeDi17fxMJEMenV-svZLaOYA/view?usp=sharing'>
                                     Resume
                                 </Button>
                             </Col>
@@ -347,6 +347,7 @@ function Home() {
                     </Col>
                 </Row>
             </Container>
+            
             <Container fluid id='education' className='to-the-left'>
                 <Row>
                     <p className='heading1' id='edu-heading'>
@@ -382,6 +383,26 @@ function Home() {
                     
                 </Row>
             </Container>
+            <Container fluid id='certifications' className='to-the-left'>
+                <Row>
+                    <p className='heading1' id="certs-heading">
+                        Certifications 
+                    </p>
+                </Row>
+                <Row className='certs'>
+                    <Col sm>
+                        <Image src={awscertification}/>
+                    </Col>
+                    <Col sm className="position-relative">
+                        <div className="image-container">
+                            <Image src={ckad} className='ckad'/>
+                            <div className="badge-overlay">
+                                <span>In Progress</span>
+                            </div>
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
             <Container fluid id='experience' className='to-the-left'>
                 <Row>
                     <p className='heading1 text-center' id='exp-heading'>
@@ -389,7 +410,7 @@ function Home() {
                     </p>
                 </Row>
                 <Row className="justify-content-md-center exp-rows">
-                    <Col sm className='exp-cells'>
+                    {/* <Col sm className='exp-cells'>
                         <h3>
                             Graduate Research Assistant
                         </h3>
@@ -400,10 +421,10 @@ function Home() {
                             <br></br>
                         </p>
                         <Button onClick={() => setGRA(true)}>My Role</Button>
-                    </Col>
+                    </Col> */}
                     <Col sm className='exp-cells'>
                         <h3>
-                            Web Development Intern
+                            Web Developer-IT Technician
                         </h3>
                         <p>
                             Associated Students of San Francisco State University
@@ -599,26 +620,6 @@ function Home() {
                     ))}
                 </Row>
             </Container>
-            <Container fluid id='certifications' className='to-the-left'>
-                <Row>
-                    <p className='heading1' id="certs-heading">
-                        Certifications 
-                    </p>
-                </Row>
-                <Row className='certs'>
-                    <Col sm>
-                        <Image src={awscertification}/>
-                    </Col>
-                    <Col sm className="position-relative">
-                        <div className="image-container">
-                            <Image src={ckad} className='ckad'/>
-                            <div className="badge-overlay">
-                                <span>In Progress</span>
-                            </div>
-                        </div>
-                    </Col>
-                </Row>
-            </Container>
             <Container fluid id='myResume' className='to-the-left'>
                 <Row>
                     <p className='heading1' id="resume-heading">
@@ -630,7 +631,7 @@ function Home() {
                         <Row>
                             <a href={resumePdf} download="Monisha_Mekala_Resume.pdf" className="download-link">
                                 <Button className="resume-download-btn mx-auto">
-                                    Download Resume
+                                    Resume
                                 </Button>
                             </a>
                         </Row>

@@ -300,6 +300,8 @@ img.img-achv-icons {
 }
 
 #education.to-the-left {
+    padding-left: 6% !important;
+    padding-right: 6% !important;
     background-color: #ebe9e5;
     font-family: "Cormorant Garamond", serif;
 }
@@ -344,6 +346,8 @@ img.img-achv-icons {
 
 #experience.to-the-left {
     padding-top: 10px !important;
+    padding-left: 16% !important;
+    padding-right: 16% !important;
 }
 
 .exp-rows {
@@ -486,14 +490,13 @@ img.img-achv-icons {
 #certifications.to-the-left {
     padding-left: 6% !important;
     padding-right: 6% !important;
-    background-color: #ebe9e5;
+    background-color: #edb7b3;
 }
 
 #certs-heading.heading1 {
     color: #202434;
     font-size: 65px !important;
     font-weight: 600;
-    padding-bottom: 50px;
 }
 
 .certs > .col{
