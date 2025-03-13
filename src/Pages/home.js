@@ -74,41 +74,54 @@ function MyVerticallyCenteredModal(props) {
                 <p>My role focuses on advancing the existing desktop-based model to a fully immersive VR experience suitable for head-mounted display devices. <span className='highlight-text'>Using Unity, .NET, and C#</span>, I’m developing enhanced functionalities to create an engaging training platform that allows users to inspect structural integrity post-earthquake, enabling hands-on learning and improved educational outcomes.</p>
             </div>
         )} */}
-        {props.org === "Associated Students of San Francisco State University" && (
+        {props.role === "Backend Developer" && (
             <div>
-                <p>As a part-time Web Developer Intern, I supported the university’s infrastructure by <span className='highlight-text'>managing AWS services and streamlining deployment processes.</span> This role allowed me to apply and <span className='highlight-text'>enhance my cloud computing and DevOps skills</span> while working within an Agile team environment.</p>
-                <p><strong>Key Responsibilities:</strong>
-                <br></br>
-                Collaborated with cross-functional teams to maintain communication and ensure smooth development and operations workflows.
-                <br></br>
-                Managed AWS services like <span className='highlight-text'>EC2, AMI, and Auto-scaling, </span>supporting cloud infrastructure scalability and performance.
-                <br></br>
-                Assisted in setting up <span className='highlight-text'>CI/CD pipelines</span> using Jenkins, automating code testing, integration, and deployment processes.
-                <br></br>
-                Configured <span className='highlight-text'>AWS RDS for database management</span>, optimizing data storage performance and reliability.
-                <br></br>
-                This internship provided hands-on experience in cloud infrastructure management, helping me build a strong foundation in DevOps practices and cloud technologies.</p>
+                <p>
+                    As a <span className='highlight-text'>Backend Developer</span> at Associated Students, San Francisco State University, I am responsible for designing and optimizing cloud infrastructure to ensure high availability, scalability, and efficiency. This role requires a balance of technical expertise and strategic problem-solving to maintain system resilience while optimizing resource utilization.
+                </p>
+                <p>
+                    <strong>Key Achievements and Responsibilities:</strong>
+                    <br></br>
+                    <strong>Cloud Infrastructure Architecture:</strong> Designed and implemented a robust cloud infrastructure, improving system resilience and enabling the platform to handle 20 percent more traffic while maintaining 99 percent uptime.
+                    <br></br>
+                    <strong>Scalability and Load Balancing:</strong> Automated load balancing across <span className='highlight-text'>AWS EC2 instances</span>, ensuring the platform could efficiently scale to meet increased traffic demands.
+                    <br></br>
+                    <strong>Microservices Deployment:</strong> Orchestrated service deployments with <span className='highlight-text'>Kubernetes</span>, enhancing service communication and increasing fault tolerance by 30 percent.
+                    <br></br>
+                    <strong>Cost Optimization:</strong> Leveraged Kubernetes Horizontal Pod Autoscaler (HPA) to dynamically adjust resource allocation, improving efficiency and reducing infrastructure costs by 20 percent.
+                    <br></br>
+                    <strong>CI/CD Automation:</strong> Streamlined CI/CD pipelines by automating rollbacks and log troubleshooting, cutting deployment time by eight hours and improving release stability.
+                    <br></br>
+                    <strong>Cross-functional Collaboration:</strong> Worked closely with team leads and stakeholders to align infrastructure strategies with business needs, ensuring seamless system operation within budget constraints.
+                    <br></br>
+                    This role has strengthened my ability to develop scalable cloud solutions, optimize DevOps processes, and collaborate effectively within a fast-paced environment. By integrating technical solutions with business objectives, I continue to enhance infrastructure performance while fostering innovation and efficiency.
+                </p>
             </div>
         )}
+
         {props.role === "Senior Software Engineer" && (
             <div>
-                <p>As a seasoned Senior Quality Assurance Engineer at Larsen & Toubro Infotech, I contributed to the transformative <span className='highlight-text'>'Marsh McLennan'</span> project. This initiative focuses on aiding organizations in meeting health, wealth, and career-related requirements through innovative and technology-driven solutions. My role involves not only conducting thorough automation and APIs testing but also gaining proficiency in <span className='highlight-text'>Java Selenium, C# BDD Specflow, and RestSharp.</span></p>
                 <p>
-                <strong>Key Achievements and Responsibilities:</strong>
-                <br></br>
-                🔍 <strong>Client Collaboration: </strong>Collaborating closely with Marsh McLennan, a prominent client in the advisory space, specializing in health, wealth, and career-related solutions through technology-driven strategies.
-                <br></br>
-                👩‍💻 <strong>Testing Expertise:</strong> Conducting extensive testing of production bugs and executing automated testing processes to ensure the seamless functionality of critical systems.
-                <br></br>
-                🛠️ <strong>Tool Proficiency: </strong>Acquiring proficiency in <span className='highlight-text'>Java Selenium and C# BDD Specflow</span>, and gaining hands-on experience with project management tools such as JIRA.
-                <br></br>
-                📚 <strong>Training and Skill Enhancement:</strong> Underwent a comprehensive one-month training program, focusing on Java and MySQL languages, Java Selenium framework, and project management tools like JIRA.
-                <br></br>
-                🤝 <strong>Team Collaboration:</strong> Worked collaboratively in a dynamic team of five members during the training period, contributing to the development of detailed test cases for the flight and hotel booking platform, via.com.
-                <br></br>
-                <strong>🚀 Innovation with POC:</strong> Piloted a Proof of Concept (POC) utilizing the innovative 'ACTS' tool to streamline test scenario generation, <span className='highlight-text'>achieving a 40% reduction in manual testing efforts and a 30% improvement in testing coverage.</span>
-                <br></br>
-                I am passionate about leveraging technology to address complex business challenges and keen on continuous learning to stay at the forefront of software engineering.
+                    As a dedicated <span className='highlight-text'>Senior Software Engineer</span> at LTIMindtree, I played a pivotal role in modernizing backend systems and optimizing performance for high-scale enterprise applications. My work involved collaborating with cross-functional teams to develop robust, scalable solutions while improving automation and deployment processes.
+                </p>
+                <p>
+                    <strong>Key Achievements and Responsibilities:</strong>
+                    <br></br>
+                    <strong>Legacy Modernization:</strong> Led the migration of legacy scripts to a Spring Boot-based application, enhancing browser compatibility and achieving a sixfold improvement in execution speed.
+                    <br></br>
+                    <strong>Performance Optimization:</strong> Improved search efficiency by implementing asynchronous processing with <span className='highlight-text'>Kafka and Redis</span>, reducing retrieval times from eight seconds to two seconds.
+                    <br></br>
+                    <strong>API Development:</strong> Developed reusable REST APIs to standardize service integration, cutting development time by 30 hours per release.
+                    <br></br>
+                    <strong>Test Automation and CI/CD:</strong> Automated integration testing on <span className='highlight-text'>Azure pipelines</span>, enhancing Agile workflows, streamlining deployments, and improving failure diagnostics.
+                    <br></br>
+                    <strong>Agile Project Execution:</strong> Maintained a sprint velocity of 30, exceeding milestones by 24 percent, ensuring timely delivery of high-quality features.
+                    <br></br>
+                    <strong>Innovation with Proof of Concept:</strong> Piloted a Proof of Concept (PoC) for the <span className='highlight-text'>ACTs tool</span>, streamlining test automation, reducing manual testing efforts by 40 percent, and improving test coverage by 30 percent.
+                    <br></br>
+                    <strong>Collaboration and Leadership:</strong> Engaged in technical discussions with leads and stakeholders, ensuring solutions aligned with business objectives and budget constraints.
+                    <br></br>
+                    This role has strengthened my ability to integrate technical expertise with strategic thinking, ensuring high-performance software solutions while fostering teamwork, innovation, and efficiency.
                 </p>
             </div>
         )}
@@ -118,21 +131,27 @@ function MyVerticallyCenteredModal(props) {
                 </p>
             </div>
         )}
-        {props.org === "Code13 Edutech Private Limited" && (
+        {props.role === "Web Development Intern" && (
             <div>
-                <p>During my internship at Code13 Edutech Private Limited, I <span className='highlight-text'>led a team of eight members</span> as a Full Stack Developer to create a cutting-edge digital marketing website, significantly elevating the company's online presence. Our team utilized a robust technology stack, including PHP, HTML, CSS, MySQL, and Bootstrap, to develop a user-friendly and visually appealing website. By enhancing the administrative panel with senior developers, we streamlined workflow and user experience, which led to a 15% reduction in development time through analytical skills and problem-solving.
+                <p>
+                    As a <span className='highlight-text'>Full-Stack Developer</span>, I engineered scalable and high-performance web applications, optimizing both frontend and backend architectures for efficiency and accessibility. This role required a strategic approach to software development, balancing technical implementation with user experience and system reliability.
                 </p>
                 <p>
-                <strong>Key Contributions:</strong>
-                <br></br>
-                🌐 <strong>Digital Marketing Website Development:</strong> Spearheaded the creation of a dynamic website, increasing traffic by 25% and streamlining customer engagement.
-                <br></br>
-                🔧 <strong>Technology Stack:</strong> Employed PHP, HTML, CSS, MySQL, and Bootstrap to deliver a comprehensive web solution.
-                <br></br>
-                🤝 <strong>Collaboration with Senior Developers:</strong> Worked closely with senior developers to upgrade the administration panel using <span className='highlight-text'>Object-oriented programming (OOP) principles</span>, enhancing capacity to support up to 100 concurrent users and improving overall functionality and efficiency.
-                </p>
-                <p>
-                This experience not only allowed me to apply my technical skills in a real-world setting but also provided valuable insights into <span className='highlight-text'>collaborative development and project management,</span> preparing me for new challenges in the ever-evolving field of web development.
+                    <strong>Key Achievements and Responsibilities:</strong>
+                    <br></br>
+                    <strong>Performance Optimization:</strong> Implemented code splitting and server-side rendering (SSR) to reduce first-load latency by 50 percent, improving page load speed and overall user experience.
+                    <br></br>
+                    <strong>Accessible and Optimized UI/UX:</strong> Designed interactive web interfaces, optimizing virtual DOM updates and asset preloading to enhance accessibility and ensure <span className='highlight-text'>WCAG compliance</span> for disabled users.
+                    <br></br>
+                    <strong>Efficient Data Management:</strong> Optimized data feeds using <span className='highlight-text'>RESTful and GraphQL APIs</span>, improving retrieval speed by 30 percent and enabling offline access with background synchronization.
+                    <br></br>
+                    <strong>Scalable Backend Architecture:</strong> Developed large-scale backend services, implementing pagination and <span className='highlight-text'>PgBouncer</span> to improve system reliability and reduce query latency by 40 percent.
+                    <br></br>
+                    <strong>Object-Oriented Programming (OOP):</strong> Applied OOP principles to enhance code modularity and scalability, ensuring efficient development and maintainability in building <span className='highlight-text'>CodaKaroYaroo</span>.
+                    <br></br>
+                    <strong>Cross-Functional Collaboration:</strong> Worked closely with frontend and backend teams to align performance strategies with business needs, ensuring seamless integration and system stability.
+                    <br></br>
+                    This role strengthened my ability to develop optimized full-stack applications, implement performance-driven solutions, and contribute to a seamless user experience while maintaining scalability and maintainability in large-scale systems.
                 </p>
             </div>
         )}
@@ -177,7 +196,7 @@ function Home() {
                         </p>
                         <Row className='text-left buttons-resume-wwm'>
                             <Col sm>
-                                <Button size="lg" target="_blank" rel="noopener noreferrer" href='https://drive.google.com/file/d/1ZrNRbw4tMDHFZNoOwrB_r1Sor-oQ6V1b/view?usp=sharing'>
+                                <Button size="lg" target="_blank" rel="noopener noreferrer" href='https://drive.google.com/file/d/1IuiIoAHW3L6Sbkhb90AqWD5nnvYuDxrJ/view?usp=sharing'>
                                     Resume
                                 </Button>
                             </Col>
@@ -397,14 +416,14 @@ function Home() {
                     </Col> */}
                     <Col sm className='exp-cells'>
                         <h3>
-                            Web Developer-IT Technician
+                            Backend Developer
                         </h3>
                         <p>
                             Associated Students of San Francisco State University
                             <br></br>
                             December 2023 - Present
                         </p>
-                        <Button onClick={() => setWDI(true)}>My Role</Button>
+                        {/* <Button onClick={() => setWDI(true)}>My Role</Button> */}
                     </Col>
                     <Col sm className='exp-cells'>
                         <h3>
@@ -415,7 +434,7 @@ function Home() {
                             <br></br>
                             July 2022 - August 2023
                         </p>
-                        <Button onClick={() => setSSE(true)}>My Role</Button>
+                        {/* <Button onClick={() => setSSE(true)}>My Role</Button> */}
                     </Col>
                 </Row>
                 <Row className="justify-content-md-center">
@@ -428,7 +447,7 @@ function Home() {
                             <br></br>
                             September 2021 - October 2021
                         </p>
-                        <Button onClick={() => setDes(true)}>My Role</Button>
+                        {/* <Button onClick={() => setDes(true)}>My Role</Button> */}
                     </Col>
                     <Col sm className='exp-cells'>
                         <h3>
@@ -439,7 +458,7 @@ function Home() {
                             <br></br>
                             April 2021 - June 2021
                         </p>
-                        <Button onClick={() => setcode13(true)}>My Role</Button>
+                        {/* <Button onClick={() => setcode13(true)}>My Role</Button> */}
                     </Col>
                 </Row>
             </Container>
@@ -750,7 +769,7 @@ function Home() {
             <MyVerticallyCenteredModal
                 show={WDI}
                 org = 'Associated Students of San Francisco State University'
-                role = 'Web Development Intern'
+                role = 'Backend Developer'
                 onHide={() => setWDI(false)}
             />
 

@@ -19,7 +19,7 @@ function TheNavbar() {
                 <Nav.Link href="#experience">Experience</Nav.Link>
                 <Nav.Link href="#projects">Projects</Nav.Link>
                 <Nav.Link href="#publish">Publications</Nav.Link>
-                <Nav.Link href="https://drive.google.com/file/d/1ZrNRbw4tMDHFZNoOwrB_r1Sor-oQ6V1b/view?usp=sharing" target="_blank" rel="noopener noreferrer">My Resume</Nav.Link>
+                <Nav.Link href="https://drive.google.com/file/d/1IuiIoAHW3L6Sbkhb90AqWD5nnvYuDxrJ/view?usp=sharing" target="_blank" rel="noopener noreferrer">My Resume</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
