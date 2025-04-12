@@ -192,14 +192,9 @@ function Home() {
                     <Col sm={8} className="text-white align-self-center">
                         <p className='heading1'>Hey, I'm Monisha.</p>
                         <p className='heading2'>
-                        Driven by innovation and versatility in Full-Stack Development, Software Engineering, DevOps, and Machine Learning—ready to tackle complex challenges across the tech landscape.
+                        Driven by innovation and versatility in Backend Development, Cloud & Distributed Systems, DevOps/MLOps, Site Reliability, Software Engineering and Machine Learning—ready to tackle complex challenges across the tech landscape.
                         </p>
                         <Row className='text-left buttons-resume-wwm'>
-                            <Col sm>
-                                <Button size="lg" target="_blank" rel="noopener noreferrer" href='https://drive.google.com/file/d/1IuiIoAHW3L6Sbkhb90AqWD5nnvYuDxrJ/view?usp=sharing'>
-                                    Resume
-                                </Button>
-                            </Col>
                             <Col sm>
                                 <Button size="lg" className='work-with-me' href='https://www.linkedin.com/in/monisha-mekala/' target="_blank" rel="noopener noreferrer">
                                     Work With Me
@@ -376,20 +371,19 @@ function Home() {
                     <Col sm>
                         <Row>
                             <p className='heading1' id="certs-heading">
-                                Certifications 
+                                Certifications
                             </p>
                         </Row>
                         <Row className='certs'>
                             <Col sm={3}>
-                                <Image src={awscertification}/>
+                                <a href="https://www.credly.com/badges/a58d31aa-13bf-463e-a8fa-525bcdd36f65/public_url" target="_blank" rel="noopener noreferrer">
+                                    <Image src={awscertification} />
+                                </a>
                             </Col>
-                            <Col sm={9}>
-                                <div className="image-container">
-                                    <Image src={ckad}/>
-                                    <div className="badge-overlay">
-                                        <span>In Progress</span>
-                                    </div>
-                                </div>
+                            <Col sm={3}>
+                                <a href="https://www.credly.com/badges/00e08bc7-a6d0-4be8-a0e0-5f10159adf6d/public_url" target="_blank" rel="noopener noreferrer">
+                                    <Image src={ckad} />
+                                </a>
                             </Col>
                         </Row>
                     </Col>
@@ -427,7 +421,7 @@ function Home() {
                     </Col>
                     <Col sm className='exp-cells'>
                         <h3>
-                            Senior Software Engineer
+                            Software Engineer - Backend
                         </h3>
                         <p>
                             Larsen & Tubro InfoTech
